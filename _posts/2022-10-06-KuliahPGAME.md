@@ -2,13 +2,168 @@
 title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
+## PERTEMUAN TIGA 03 :
+
+|Status  | : Offline                    |
+|Waktu   | : 13/10/2022                |
+|Tema    | : Praktikum PGame - JAVA - Variabel dan Tipe Data|
+
+
+###  Materi Dasar
+1.  `Keyword dalam Java`
+    Kata kunci adalah identifier yang telah dipesan untuk didefinisikan sebelumnya oleh Java
+    untuk tujuan tertentu. Anda tidak dapat menggunakan keyword sebagai nama variabel, class,
+    method anda, dsb
+2.  `Tipe Data Primitif`
+    Bahasa pemrograman Java mendefinisikan delapan tipe data primitif. Mereka diantaranya
+    adalah boolean (untuk bentuk logika), char (untuk bentuk tekstual), byte, short, int, long (integral),
+    double and float (floating point).
+3.  `Variabel`,
+    Variabel adalah item yang digunakan data untuk menyimpan pernyataan objek. Variabel
+    memiliki tipe, data dan nama. Tipe data menandakan tipe nilai yang dapat dibentuk oleh variabel itu
+    sendiri. Nama variabel harus mengikuti aturan untuk identifier.
+
+### KEYWORD dalam Bahasa Pemrograman JAVA
+
+Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman Java :
+
+|abstract|   continue|  for|         new|         switch|
+|assert***|  default|   goto*|       package|     synchronized|
+|boolean|    do|        if|          private|     this|
+|break|      double|    implements|  protected|   throw|
+|byte|       else|      import|      public|      throws|
+|case|       enum****|  instanceof|  return|      transient|
+|catch|      extends|   int|         short|       try|
+|char|       final|     interface|   static|      void|
+|class|      finally|   long|        strictfp**|  volatile|
+|const*|     float|     native|      super|       while|
+
+
+<!-- * Note: 
+    `*` 	not used
+    `**` 	added in 1.2
+    `***` 	added in 1.4
+    `****` 	added in 5.0 -->
+
+### Type Data di JAVA
+
+- `byte` (number, 1 byte)
+- `short` (number, 2 bytes)
+- `int` (number, 4 bytes)
+- `long` (number, 8 bytes)
+- `float` (float number, 4 bytes)
+- `double` (float number, 8 bytes)
+- `char` (a character, 2 bytes)
+- `boolean` (true or false, 1 byte)
+
+### Contoh : 
+
+* Contoh dari Tipe data dan Variabel : 
+
+    ```java
+
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-3 / p3
+    // Nama File        : pgame_p3_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Materi           : Tipe Data dan Variabel
+    // *****************************************
+
+
+    // Nama Class
+    class pgame_p3_19001 {
+
+        public static void main(String args[])
+        {
+
+            // Deklarasi Type dada dan Buat Variabel
+            int data_angka = 7;                     // Tipe data Integer/nomor/angka
+            float data_float = 3.39f;               // Tipe data float
+            char data_karakter = 'A';               // Tipe data karakter
+            boolean data_bool = true;               // Tipe data Boolean
+            String data_teks = "Informatika UMMU";  // Tipe data String
+
+            // Cetak Ke layar
+            System.out.println("\n Tipe Data : ");
+            System.out.println("------------------");
+            System.out.println(data_angka);
+            System.out.println(data_float);
+            System.out.println(data_karakter);
+            System.out.println(data_bool);
+            System.out.println(data_teks);
+            System.out.println("*********************************");
+
+        }
+    }
+
+
+    ```
+
+### Eksplore code diatas :
+
+3. Lengkapi kode dibawah dengan beberapa contoh tipe data dan variabel, kemudian Simpan dengan nama file `pgame_p3_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_19001.java`)
+4. Gunakan shell CMD atau Command Propm untuk masuk ke direktori kerja anda dan jika telah selesai menulis code-nya, silahkan di-`compile` dengan perintah `javac pgame_p3_19001.java`
+5. Setelah itu, hasil compile perintah ini akan menghasilkan file binari dengan nama `pgame_p3_19001.class`
+6. Silahkan Eksekusi code binarinya dengan perintah  `java pgame_p3_19001.java`,
+7. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil/buat hasilnya dengan di-`screenshot`  dan beri nama `pgame_p3_19001.png`, 
+9. Total hanya dua file yang harus dikirim yaitu: 
+    1. file: `pgame_p3_19001.java` dan 
+    2. file: `pgame_p3_19001.png`
+8. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
+
+    ```java
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-3 / p3
+    // Nama File        : pgame_p3_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Materi           : Tipe Data dan Variabel
+    // *****************************************
+
+
+    // Nama Class
+    class pgame_p3_19001 {
+
+        public static void main(String args[])
+        {
+
+            // Deklarasi Type dada dan Buat Variabel
+            // Buat Variabel dan isi data dengan data Nama, NPM, dll
+
+            // Cetak Ke layar
+            System.out.println("\n Tipe Data : ");
+            System.out.println("------------------");
+
+            System.out.println("*********************************");
+
+        }
+    }
+
+
+    ```
+
+### Hasil Praktikum yang di Screenshot
+
+Sertakan Hasil Screenshot dari praktikum anda !
+
+Hasil...???
+
+
+. 
+
+***
+***
+***
 
 
 ## PERTEMUAN DUA 02 :
 
 |Status  | : Online                    |
 |Waktu   | : 06/10/2022                |
-|Tema    | : Praktikum PEMROGRAMAN GAME - JAVA |
+|Tema    | : Praktikum PGame - JAVA - Output Text dan Number|
 
 ### ARAHAN untuk Praktikum Pertemuan Ke-2
 
@@ -39,31 +194,65 @@ published: true
     2. file: `pgame_p2_19001.png`
 8. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
 
+    ```java
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-2 / p2
+    // Nama File        : pgame_p2_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // *****************************************
+
+    // nama class (pgame_p2_19001) harus sama dengan nama file *
+    public class pgame_p2_19001 {
+        public static void main(String args[])
+        {
+            // print out text
+            System.out.println("\n Halo Informatika UMMU !");
+            System.out.println(" Nama    : Ikhwan Elyas");
+            System.out.println(" NPM     : 19001");
+            System.out.println(" Jurusan : Sistem Informasi");
+            System.out.println(" Prodi   : Informatika");
+            System.out.println(" Kampus  : UMMU Ternate");
+            System.out.println("--------------------------");
+            // print out number/angka
+            System.out.println(12345);
+
+            System.out.println("***************************************\n");
+        }
+    }
+
+    ```
+
+### Update Code : 
+
+
 ```java
-// Anak2 Informatika UMMU Ternate
-// Mata kuliah      : Pemrograman Game
-// Praktikum        : Ke-2 / p2
-// Nama File        : pgame_p2_19001 (ganti dengan npm masing2)
-// Nama Mahasiswa   : Ganti dengan Nama Anda 
-// NPM              : 19001 (contoh saja)
-// *****************************************
 
 // nama class (pgame_p2_19001) harus sama dengan nama file *
 public class pgame_p2_19001 {
     public static void main(String args[])
     {
+        // print out text
         System.out.println("\n Halo Informatika UMMU !");
         System.out.println(" Nama    : Ikhwan Elyas");
         System.out.println(" NPM     : 19001");
         System.out.println(" Jurusan : Sistem Informasi");
         System.out.println(" Prodi   : Informatika");
         System.out.println(" Kampus  : UMMU Ternate");
+        System.out.println("--------------------------");
+        // print out number/angka
+        System.out.println(12345);
+        System.out.println(67890);
+        System.out.println(" " + 12345);
+        System.out.println(" " + 67890); 
+        System.out.println(" Number : " + 12345);
+        System.out.println(" Number : " + 67890);         
         System.out.println("***************************************\n");
     }
 }
 
 ```
-
 
 ### Hasil Praktikum yang di Screenshot
 
