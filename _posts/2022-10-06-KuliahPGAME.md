@@ -65,7 +65,7 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
     // Anak2 Informatika UMMU Ternate
     // Mata kuliah      : Pemrograman Game
     // Praktikum        : Ke-3 / p3
-    // Nama File        : pgame_p3_19001 (ganti dengan npm masing2)
+    // Nama File        : pgame_p3_c1_19001 (ganti dengan npm masing2)
     // Nama Mahasiswa   : Ganti dengan Nama Anda 
     // NPM              : 19001 (contoh saja)
     // Materi           : Tipe Data dan Variabel
@@ -73,7 +73,7 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 
 
     // Nama Class
-    class pgame_p3_19001 {
+    class pgame_p3_c1_19001 {
 
         public static void main(String args[])
         {
@@ -109,8 +109,10 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 6. Silahkan Eksekusi code binarinya dengan perintah  `java pgame_p3_19001.java`,
 7. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil/buat hasilnya dengan di-`screenshot`  dan beri nama `pgame_p3_19001.png`, 
 9. Total hanya dua file yang harus dikirim yaitu: 
-    1. file: `pgame_p3_19001.java` dan 
-    2. file: `pgame_p3_19001.png`
+    1. file: `pgame_p3_c1_19001.java`,
+    2. file: `pgame_p3_c2_19001.java`, 
+    3. file: `pgame_p3_c1_19001.png`,
+    4. file: `pgame_p3_c2_19001.png` dan
 8. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
 
     ```java
@@ -123,25 +125,43 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
     // Materi           : Tipe Data dan Variabel
     // *****************************************
 
-
     // Nama Class
-    class pgame_p3_19001 {
+    class pgame_p3_c2_19001 {
 
         public static void main(String args[])
         {
 
             // Deklarasi Type dada dan Buat Variabel
             // Buat Variabel dan isi data dengan data Nama, NPM, dll
+            String nama = "Ikhwan"; // deklarasi variabel "nama" dengan data bernilai "Yusuf"
+            String npm  = "19001"; // deklarasi variabel "npm" dengan data bernilai "19109"
+            int tgl = 13102022;
 
+            int usia ;
+            float tinggi, ideal;
+            int berat;
+
+            tinggi  = 175.8f;
+            usia = 100;
+            berat = 75;
+            // ideal = tinggi / berat;
+            ideal = ((tinggi-100) - (0.10f*(tinggi-100))) ;
             // Cetak Ke layar
-            System.out.println("\n Tipe Data : ");
+            System.out.println("\n Latihan Variabel : ");
             System.out.println("------------------");
+            System.out.println(" Nama : " + nama );
+            System.out.println(" NPM  : " + npm );
+            System.out.println(" TGL  : " + tgl );
 
-            System.out.println("*********************************");
+            System.out.println(" Usia \t: " + usia);
+            System.out.println(" Tinggi\t: " + tinggi  + " CM.");
+            System.out.println(" Berat \t: " + berat  + " Kg.");
+            System.out.println(" Berat Ideal \t: " + ideal + " Kg.");
+
+            System.out.println("*********************************\n");
 
         }
     }
-
 
     ```
 
@@ -149,7 +169,13 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 
 Sertakan Hasil Screenshot dari praktikum anda !
 
-Hasil...???
+* Melihat hasil screenshot code 1 (c1);
+    ![compile code](assets/img/pgame_p3_c1_2022-10-14_08-09-10.png)
+
+
+* Melihat hasil screenshot code 2 (c2), hasil dari explorasi dari code sebelumnya ;
+    ![compile code](assets/img/pgame_p3_c2_2022-10-14_09-54-21.png)
+
 
 
 . 
