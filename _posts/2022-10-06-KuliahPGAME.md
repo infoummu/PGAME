@@ -58,6 +58,10 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 
 ### Contoh : 
 
+1. Tulis kode dibawah kemudian Simpan dengan nama file `pgame_p3_c1_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_c1_19001.java`)
+2. Setelah itu jalankan untuk di test di cmd/poweshell/terminal, perintahnya: `java pgame_p3_c1_19001.java`
+3. Jika berhasil, lanjutkan untuk ekplorasi code tersebut ke code berikutnya.
+
 * Contoh dari Tipe data dan Variabel : 
 
     ```java
@@ -103,7 +107,7 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 
 ### Eksplore code diatas :
 
-3. Lengkapi kode dibawah dengan beberapa contoh tipe data dan variabel, kemudian Simpan dengan nama file `pgame_p3_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_19001.java`)
+3. Lengkapi kode dibawah dengan beberapa contoh tipe data dan variabel, kemudian Simpan dengan nama file `pgame_p3_c2_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_c2_19001.java`)
 4. Gunakan shell CMD atau Command Propm untuk masuk ke direktori kerja anda dan jika telah selesai menulis code-nya, silahkan di-`compile` dengan perintah `javac pgame_p3_19001.java`
 5. Setelah itu, hasil compile perintah ini akan menghasilkan file binari dengan nama `pgame_p3_19001.class`
 6. Silahkan Eksekusi code binarinya dengan perintah  `java pgame_p3_19001.java`,
