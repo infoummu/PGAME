@@ -15,17 +15,17 @@
 <meta property="og:title" content="Kuliah PEMROGRAMAN GAME" />
 <meta name="author" content="Informatika UMMU" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="PERTEMUAN TIGA 03 :" />
-<meta property="og:description" content="PERTEMUAN TIGA 03 :" />
-<link rel="canonical" href="http://192.168.56.118:4001/PGAME/KuliahPGAME" />
-<meta property="og:url" content="http://192.168.56.118:4001/PGAME/KuliahPGAME" />
+<meta name="description" content="PERTEMUAN EMPAT 04 - OPERATOR :" />
+<meta property="og:description" content="PERTEMUAN EMPAT 04 - OPERATOR :" />
+<link rel="canonical" href="http://192.168.56.118:4000/PGAME/KuliahPGAME" />
+<meta property="og:url" content="http://192.168.56.118:4000/PGAME/KuliahPGAME" />
 <meta property="og:site_name" content="Info UMMU Ternate" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-06T00:00:00-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Kuliah PEMROGRAMAN GAME" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Informatika UMMU","url":"https://infoummu.github.io/hacker-blog"},"dateModified":"2022-10-06T00:00:00-04:00","datePublished":"2022-10-06T00:00:00-04:00","description":"PERTEMUAN TIGA 03 :","headline":"Kuliah PEMROGRAMAN GAME","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.56.118:4001/PGAME/KuliahPGAME"},"url":"http://192.168.56.118:4001/PGAME/KuliahPGAME"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Informatika UMMU","url":"https://infoummu.github.io/hacker-blog"},"dateModified":"2022-10-06T00:00:00-04:00","datePublished":"2022-10-06T00:00:00-04:00","description":"PERTEMUAN EMPAT 04 - OPERATOR :","headline":"Kuliah PEMROGRAMAN GAME","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.56.118:4000/PGAME/KuliahPGAME"},"url":"http://192.168.56.118:4000/PGAME/KuliahPGAME"}</script>
 <!-- End Jekyll SEO tag -->
  
 
@@ -149,7 +149,498 @@
         <article>
   <h2>Kuliah PEMROGRAMAN GAME</h2>
   <time datetime="2022-10-06T00:00:00-04:00" class="by-line">06 Oct 2022</time>
-  <h2 id="pertemuan-tiga-03-">PERTEMUAN TIGA 03 :</h2>
+  <h2 id="pertemuan-empat-04---operator-">PERTEMUAN EMPAT 04 - OPERATOR :</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Status</td>
+      <td>: Offline</td>
+    </tr>
+    <tr>
+      <td>Waktu</td>
+      <td>: 20/10/2022</td>
+    </tr>
+    <tr>
+      <td>Tema</td>
+      <td>: Praktikum PGame - JAVA - Operator</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="operator-dalam-java">Operator dalam Java</h3>
+<p>Sebelumnya telah dibahas jenis-jenis tipe data di dalam bahasa Java. Untuk mengolah data tersebut, butuh operator. Oleh karena itu pertemuan kali ini akan membahas tentang jenis-jenis operator dalam bahasa pemrograman Java.</p>
+
+<h3 id="operand-dan-operator-dalam-java">Operand dan Operator dalam Java</h3>
+
+<p>Dalam bahasa Java, terdapat istilah <code class="language-plaintext highlighter-rouge">operand</code> dan <code class="language-plaintext highlighter-rouge">operator</code>. 
+<code class="language-plaintext highlighter-rouge">Operand</code> adalah nilai asal yang dipakai dalam sebuah proses operasi. 
+Sedangkan <code class="language-plaintext highlighter-rouge">Operator</code> adalah instruksi yang diberikan untuk mendapatkan hasil dari proses tersebut.</p>
+
+<p>Contoh, pada operasi: 10 + 2. Angka 10 dan 2 disebut sebagai <code class="language-plaintext highlighter-rouge">operand</code>, sedangkan tanda tambah (karakter +) adalah <code class="language-plaintext highlighter-rouge">operator</code>.</p>
+
+<h3 id="sifat-operator-">Sifat Operator :</h3>
+
+<p>Berdasarkan Sifat Operator dari <code class="language-plaintext highlighter-rouge">jumlah OPERAND-nya</code>, operator dibagi menjadi 3 jenis: Operator <code class="language-plaintext highlighter-rouge">Unary</code>, Operator <code class="language-plaintext highlighter-rouge">Binary</code> dan Operator <code class="language-plaintext highlighter-rouge">Ternary.</code></p>
+
+<ol>
+  <li>
+    <p>Operator <code class="language-plaintext highlighter-rouge">Unary</code>,</p>
+
+    <p>Operator <code class="language-plaintext highlighter-rouge">Unary</code> adalah operator yang hanya terdiri dari 1 operand (masukan/input). Contohnya adalah operator positif (plus): +7, +9, +10.111</p>
+
+    <p>Biasanya dipakai di perulangan (looping) atau di sebuah logika if</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>+</td>
+          <td>Positif (tanda nilai variabel tersebut bernilai positif)</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Negatif (tanda nilai variabel tersebut bernilai negatif)</td>
+        </tr>
+        <tr>
+          <td>++</td>
+          <td>Tambah 1 (nilai variabel ditambahkan satu)</td>
+        </tr>
+        <tr>
+          <td>–</td>
+          <td>kurang 1 (nilai variabel dikurangi satu)</td>
+        </tr>
+        <tr>
+          <td>!</td>
+          <td>kebalikan nilai boolean (artinya misal variabel awal bernilai true, setelah di manipulasi dengan operator ! menjadi nilainya false)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator <code class="language-plaintext highlighter-rouge">Binary</code>,</p>
+
+    <p>Operator <code class="language-plaintext highlighter-rouge">Binary</code> adalah operator yang terdiri dari 2 operand (masukan/input). Sebagian besar operator di dalam bahasa Java termasuk ke dalam operator binary. Contohnya seperti operator aritmatika: 4 + 8, 9 * 2, 8 % 2, dll.</p>
+  </li>
+  <li>
+    <p>Operator <code class="language-plaintext highlighter-rouge">Ternary</code>,</p>
+
+    <p>Operator <code class="language-plaintext highlighter-rouge">Ternary </code>adalah operator yang terdiri dari 3 operand (masukan/input). Bahasa Java memiliki 1 operator ternary, yakni ” ? : ” seperti (a == 1) ? 20: 30.</p>
+  </li>
+</ol>
+
+<h3 id="jenis-operator-">Jenis Operator :</h3>
+
+<p>Berdasarkan Fungsinya, Jenis Operator dapat dibagi menjadi beberapa jenis sebagai berikut:</p>
+
+<ol>
+  <li>
+    <p>Operator <code class="language-plaintext highlighter-rouge">Aritmatika</code></p>
+
+    <p>Operator aritmatika adalah operator yang biasa kita temukan untuk operasi matematika. Aritmatika sendiri merupakan cabang ilmu matematika yang membahas perhitungan sederhana seperti kali, bagi, tambah, kurang dan % yang dipakai untuk mencari sisa hasil bagi.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Penjelasan</th>
+          <th>Contoh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>+</td>
+          <td>Penambahan</td>
+          <td>a = 5 + 2</td>
+        </tr>
+        <tr>
+          <td>–</td>
+          <td>Pengurangan</td>
+          <td>a = 5 – 2</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Perkalian</td>
+          <td>a = 5 * 2</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>Pembagian</td>
+          <td>a = 5 / 2</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Sisa hasil bagi (modulus)</td>
+          <td>a = 5 % 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator Increment dan Decrement</p>
+
+    <p>Operator increment dan decrement adalah sebutan untuk operasi seperti a++, dan a–. Ini sebenarnya penulisan singkat dari operasi a = a + 1 serta a = a – 1.</p>
+
+    <p>Increment digunakan untuk menambah variabel sebanyak 1 angka, sedangkan decrement digunakan untuk mengurangi variabel sebanyak 1 angka.</p>
+
+    <p>Penulisannya menggunakan tanda tambah 2 kali untuk increment, dan tanda kurang 2 kali untuk decrement. Penempatan tanda tambah atau kurang ini boleh di awal seperti ++a dan –a, atau di akhir variabel seperti a++ dan a–.</p>
+
+    <p>Dengan demikian terdapat 4 jenis increment dan decrement dalam bahasa Java:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Penjelasan</th>
+          <th>Contoh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pre-increment</td>
+          <td>Tambah a sebanyak 1 angka, lalu tampilkan hasilnya</td>
+          <td>++a</td>
+        </tr>
+        <tr>
+          <td>Post-increment</td>
+          <td>Tampilkan nilai a, lalu tambah a sebanyak 1 angka</td>
+          <td>a++</td>
+        </tr>
+        <tr>
+          <td>Pre-decrement</td>
+          <td>Kurangi a sebanyak 1 angka, lalu tampilkan hasilnya</td>
+          <td>–a</td>
+        </tr>
+        <tr>
+          <td>Post-decrement</td>
+          <td>Tampilkan nilai a, lalu kurangi a sebanyak 1 angka</td>
+          <td>a–</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator Perbandingan / Relasional</p>
+
+    <p>Operator perbandingan dipakai untuk membandingkan 2 buah nilai, apakah nilai tersebut sama besar, lebih kecil, lebih besar, dll. Hasil dari operator perbandingan ini adalah boolean True atau False.</p>
+
+    <p>Tabel berikut merangkum hasil dari operator perbandingan dalam bahasa Java:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Penjelasan</th>
+          <th>Contoh</th>
+          <th>Hasil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>==</td>
+          <td>Sama dengan</td>
+          <td>5 == 5</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>Tidak sama dengan</td>
+          <td>5 != 5</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>Lebih besar</td>
+          <td>5 &gt; 6</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>Lebih kecil</td>
+          <td>5 &lt; 6</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>&gt;=</td>
+          <td>Lebih besar atau sama dengan</td>
+          <td>5 &gt;= 3</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>&lt;=</td>
+          <td>Lebih kecil atau sama dengan</td>
+          <td>5 &lt;= 5</td>
+          <td>true</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator Logika / Boolean</p>
+
+    <p>Operator logika dipakai untuk menghasilkan nilai boolean true atau false dari 2 kondisi atau lebih. Tabel berikut merangkum hasil dari operator logika dalam bahasa Java:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Nama</th>
+          <th>Penjelasan</th>
+          <th>Contoh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&amp;&amp;</td>
+          <td>And</td>
+          <td>Akan menghasilkan true jika kedua operand true</td>
+          <td>true &amp;&amp; false, hasilnya: false</td>
+        </tr>
+        <tr>
+          <td>||</td>
+          <td>Or</td>
+          <td>Akan menghasilkan true jika salah satu operand true</td>
+          <td>true || false, hasilnya: false</td>
+        </tr>
+        <tr>
+          <td>!</td>
+          <td>Not</td>
+          <td>Akan menghasilkan true jika operand false</td>
+          <td>!false, hasilnya: true</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator Bitwise</p>
+
+    <p>Bitwise adalah operator khusus untuk menangani operasi logika bilangan biner dalam bentuk bit.</p>
+
+    <p>Bilangan biner sendiri merupakan jenis bilangan yang hanya terdiri dari 2 jenis angka, yakni 0 dan 1. Jika nilai asal yang dipakai bukan bilangan biner, akan dikonversi secara otomatis oleh compiler Java menjadi bilangan biner. Misalnya 7 desimal = 0111 dalam bilangan biner.</p>
+
+    <p>Bahasa Java mendukung 6 jenis operator bitwise. Daftar lengkapnya dapat dilihat pada tabel berikut:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Nama</th>
+          <th>Contoh</th>
+          <th>Biner</th>
+          <th>Hasil (biner)</th>
+          <th>Hasil (desimal)</th>
+          <th> </th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&amp;</td>
+          <td>AND</td>
+          <td>10 &amp; 12</td>
+          <td>1010 &amp; 1100</td>
+          <td>1000</td>
+          <td>8</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>|</td>
+          <td>OR</td>
+          <td>10</td>
+          <td>12</td>
+          <td>1010</td>
+          <td>1100</td>
+          <td>1110</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>^</td>
+          <td>XOR</td>
+          <td>10 ^ 1</td>
+          <td>1010 ^ 1100</td>
+          <td>0110</td>
+          <td>6</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>~</td>
+          <td>NOT</td>
+          <td>~10</td>
+          <td>~1010</td>
+          <td>0101</td>
+          <td>-11 (Two’s complement)</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>«</td>
+          <td>Left shift</td>
+          <td>10 « 1</td>
+          <td>1010 « 1</td>
+          <td>10100</td>
+          <td>20</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>»</td>
+          <td>Right shift</td>
+          <td>10 » 1</td>
+          <td>1010 » 1</td>
+          <td>101</td>
+          <td>5</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Operator Assignment</p>
+
+    <p>Operator assignment adalah operator yang digunakan untuk memberikan nilai ke dalam suatu variabel. Di dalam bahasa Java, operator assignment menggunakan tanda sama dengan ” = “. Nantinya juga terdapat operator assignment gabungan, seperti ” += “, ” -= “, dsb.</p>
+  </li>
+  <li>
+    <p>Operator Type Comparison</p>
+
+    <p>Operator type comparison adalah sebutan untuk operator khusus yang dipakai untuk pemeriksaan sebuah object. Di dalam bahasa Java operator ini menggunakan perintah <code class="language-plaintext highlighter-rouge">instanceof</code>.</p>
+  </li>
+</ol>
+
+<h3 id="kerjakan-praktikkum-">Kerjakan Praktikkum :</h3>
+
+<ol>
+  <li>Tulis kode dibawah kemudian Simpan dengan nama file <code class="language-plaintext highlighter-rouge">pgame_p4_c1_NPM.java</code> (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : <code class="language-plaintext highlighter-rouge">pgame_p4_c1_19001.java</code>)</li>
+  <li>Setelah itu jalankan untuk di test di cmd/poweshell/terminal, perintahnya: <code class="language-plaintext highlighter-rouge">java pgame_p4_c1_19001.java</code></li>
+  <li>Kemudian, lanjutkan Praktikumnya dengan buat file baru untuk praktikum code selanjutnya sampai jenis operator ke-7 yaitu <code class="language-plaintext highlighter-rouge">instanceof</code>.</li>
+</ol>
+
+<ul>
+  <li>
+    <p>Code <code class="language-plaintext highlighter-rouge">p4_c1</code>:</p>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="c1">// Anak2 Informatika UMMU Ternate</span>
+  <span class="c1">// Mata kuliah      : Pemrograman Game</span>
+  <span class="c1">// Praktikum        : Ke-4 / p4</span>
+  <span class="c1">// Nama File        : pgame_p4_c1_19001 (ganti dengan npm masing2)</span>
+  <span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+  <span class="c1">// NPM              : 19001 (contoh saja)</span>
+  <span class="c1">// Tema             : Operator - Aritmatika</span>
+  <span class="c1">// *****************************************</span>
+
+
+  <span class="c1">// Nama Class</span>
+  <span class="kd">class</span> <span class="nc">pgame_p4_c1_19001</span> <span class="o">{</span>
+
+      <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+      <span class="o">{</span>
+
+          <span class="c1">// Latihan P4 - C1</span>
+          <span class="kt">int</span>   <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">;</span>    <span class="c1">// buat/deklarasi variabel kosong a dan b tipe integer</span>
+          <span class="kt">float</span> <span class="n">c</span><span class="o">,</span> <span class="n">d</span><span class="o">;</span>    <span class="c1">// buat/deklarasi variabel kosong c dan d tipe float</span>
+          <span class="kt">double</span> <span class="n">xab</span><span class="o">,</span> <span class="n">xcd</span><span class="o">;</span> <span class="c1">// buat/deklarasi variabel kosong xab dan xcd tipe double</span>
+
+          <span class="c1">// isi variabel dengan nilai </span>
+          <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+          <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+          <span class="n">c</span> <span class="o">=</span> <span class="mi">15</span><span class="o">;</span>
+          <span class="n">d</span> <span class="o">=</span> <span class="mf">3.1</span><span class="no">F</span><span class="o">;</span>
+
+          <span class="c1">// operasi Aritmatika Penjumlahan</span>
+          <span class="n">xab</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+          <span class="n">xcd</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">d</span><span class="o">;</span>
+
+          <span class="c1">// Cetak Ke layar            </span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Nama : Ikhwan (ganti nama anda)"</span> <span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" NPM  : 19001  (ganti npm anda)"</span> <span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\n Operator Aritmatika : "</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"------------------"</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">);</span>
+
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\nHasil Penambahan : "</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">xab</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">xcd</span><span class="o">);</span>
+
+          <span class="c1">// operasi Aritmatika Pengurangan</span>
+          <span class="n">xab</span> <span class="o">=</span> <span class="n">c</span> <span class="o">-</span> <span class="n">a</span><span class="o">;</span>
+          <span class="n">xcd</span> <span class="o">=</span> <span class="n">c</span> <span class="o">-</span> <span class="n">d</span><span class="o">;</span>
+
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\nHasil Pengurangan : "</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">xab</span><span class="o">);</span>
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">xcd</span><span class="o">);</span>
+
+          <span class="c1">// operasi Aritmatika Pembagian</span>
+          <span class="c1">// Lanjutkan ...</span>
+
+
+          <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*********************************"</span><span class="o">);</span>
+
+      <span class="o">}</span>
+  <span class="o">}</span>
+
+
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="latihan-praktikum-4-lanjutan-operator-">Latihan Praktikum 4 Lanjutan Operator :</h3>
+
+<ol>
+  <li>Lanjutkan kode diatas untuk jenis operator lainnya, kemudian Simpan dengan nama file masing-masing dari <code class="language-plaintext highlighter-rouge">pgame_p4_c2_NPM.java</code> sampai <code class="language-plaintext highlighter-rouge">pgame_p4_c7_NPM.java</code> (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : <code class="language-plaintext highlighter-rouge">pgame_p3_c2_19001.java</code>)</li>
+  <li>Gunakan shell CMD atau Command Propm untuk masuk ke direktori kerja anda dan jika telah selesai menulis code-nya, silahkan di-<code class="language-plaintext highlighter-rouge">compile</code> dengan perintah <code class="language-plaintext highlighter-rouge">pgame_p4_c2_NPM.java</code></li>
+  <li>Setelah itu, hasil compile perintah ini akan menghasilkan file binari dengan nama <code class="language-plaintext highlighter-rouge">pgame_p4_c2_19001.class</code></li>
+  <li>Silahkan Eksekusi code binarinya dengan perintah  <code class="language-plaintext highlighter-rouge">java pgame_p4_c2_19001.java</code>,</li>
+  <li>Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil/buat hasilnya dengan di-<code class="language-plaintext highlighter-rouge">screenshot</code>  dan beri nama <code class="language-plaintext highlighter-rouge">pgame_p4_c2_19001.png</code>,</li>
+  <li>Total ada 7 file <code class="language-plaintext highlighter-rouge">code</code> yang harus dikirim yaitu:
+    <ol>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c1_19001.java</code>,</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c2_19001.java</code>, dan seterusnya sampai</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c7_19001.java</code>,</li>
+    </ol>
+
+    <p>dan juga masing-masing dengan hasil screenshotnya:</p>
+    <ol>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c1_19001.png</code>,</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c2_19001.png</code>, dan seterusnya sampai</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p4_c7_19001.png</code>.</li>
+    </ol>
+  </li>
+  <li>Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini <a href="https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing" target="_blank">GDRIVE</a></li>
+</ol>
+
+<h1 id="hasil-screenshot-hasil-code-p4_c1">Hasil Screenshot Hasil code “p4_c1”</h1>
+
+<ul>
+  <li>Melihat hasil screenshot code p4_c1: 
+  <img src="assets/img/pgame_p4_c1_2022-10-14_09-54-21.png" alt="compile code" /></li>
+</ul>
+
+<p>berlanjut …</p>
+
+<hr />
+
+<h4 id="reff-pertemuan-ke-4">Reff Pertemuan ke 4:</h4>
+
+<ol>
+  <li><a href="https://www.duniailkom.com/tutorial-belajar-java-jenis-jenis-operator-dalam-bahasa-java/" target="_blank">reff 1</a></li>
+  <li><a href="http://mastahcode.com/blog/belajar-java-dasar-8-operator-unary-MLJ" target="_blank">reff 2</a></li>
+</ol>
+
+<hr />
+<hr />
+<hr />
+
+<h2 id="pertemuan-tiga-03---variabel--tipe-data">PERTEMUAN TIGA 03 - Variabel &amp; Tipe Data:</h2>
 
 <table>
   <tbody>
@@ -168,7 +659,8 @@
   </tbody>
 </table>
 
-<h3 id="materi-dasar">Materi Dasar</h3>
+<h3 id="keyword-variabel-dan-tipe-data-di-java">Keyword, Variabel dan Tipe Data di Java</h3>
+
 <ol>
   <li><code class="language-plaintext highlighter-rouge">Keyword dalam Java</code>
 Kata kunci adalah identifier yang telah dipesan untuk didefinisikan sebelumnya oleh Java
@@ -282,7 +774,7 @@ sendiri. Nama variabel harus mengikuti aturan untuk identifier.</li>
   <li><code class="language-plaintext highlighter-rouge">boolean</code> (true or false, 1 byte)</li>
 </ul>
 
-<h3 id="contoh-">Contoh :</h3>
+<h3 id="kerjakan-praktikkum--1">Kerjakan Praktikkum :</h3>
 
 <ol>
   <li>Tulis kode dibawah kemudian Simpan dengan nama file <code class="language-plaintext highlighter-rouge">pgame_p3_c1_NPM.java</code> (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : <code class="language-plaintext highlighter-rouge">pgame_p3_c1_19001.java</code>)</li>

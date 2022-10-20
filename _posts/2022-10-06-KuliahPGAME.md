@@ -2,14 +2,273 @@
 title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
-## PERTEMUAN TIGA 03 :
+
+## PERTEMUAN EMPAT 04 - OPERATOR :
+
+|Status  | : Offline                   |
+|Waktu   | : 20/10/2022                |
+|Tema    | : Praktikum PGame - JAVA - Operator|
+
+
+### Operator dalam Java
+Sebelumnya telah dibahas jenis-jenis tipe data di dalam bahasa Java. Untuk mengolah data tersebut, butuh operator. Oleh karena itu pertemuan kali ini akan membahas tentang jenis-jenis operator dalam bahasa pemrograman Java.
+
+
+### Operand dan Operator dalam Java
+
+Dalam bahasa Java, terdapat istilah `operand` dan `operator`. 
+`Operand` adalah nilai asal yang dipakai dalam sebuah proses operasi. 
+Sedangkan `Operator` adalah instruksi yang diberikan untuk mendapatkan hasil dari proses tersebut.
+
+Contoh, pada operasi: 10 + 2. Angka 10 dan 2 disebut sebagai `operand`, sedangkan tanda tambah (karakter +) adalah `operator`.
+
+### Sifat Operator :
+
+Berdasarkan Sifat Operator dari `jumlah OPERAND-nya`, operator dibagi menjadi 3 jenis: Operator `Unary`, Operator `Binary` dan Operator `Ternary.`
+
+1. Operator `Unary`,
+
+    Operator `Unary` adalah operator yang hanya terdiri dari 1 operand (masukan/input). Contohnya adalah operator positif (plus): +7, +9, +10.111
+
+    Biasanya dipakai di perulangan (looping) atau di sebuah logika if
+
+    |Operator   |   Keterangan  |
+    |-----------|---------------|
+    |+	    | Positif (tanda nilai variabel tersebut bernilai positif)  |
+    |-	    |Negatif (tanda nilai variabel tersebut bernilai negatif)   |
+    |++	    |Tambah 1 (nilai variabel ditambahkan satu)                 |
+    |--     |kurang 1 (nilai variabel dikurangi satu)                   |
+    |!	    |kebalikan nilai boolean (artinya misal variabel awal bernilai true, setelah di manipulasi dengan operator ! menjadi nilainya false)                |
+
+
+2. Operator `Binary`,
+
+    Operator `Binary` adalah operator yang terdiri dari 2 operand (masukan/input). Sebagian besar operator di dalam bahasa Java termasuk ke dalam operator binary. Contohnya seperti operator aritmatika: 4 + 8, 9 * 2, 8 % 2, dll.
+
+3. Operator `Ternary`,
+
+    Operator `Ternary `adalah operator yang terdiri dari 3 operand (masukan/input). Bahasa Java memiliki 1 operator ternary, yakni ” ? : ” seperti (a == 1) ? 20: 30.
+
+### Jenis Operator :
+
+Berdasarkan Fungsinya, Jenis Operator dapat dibagi menjadi beberapa jenis sebagai berikut:
+
+1. Operator `Aritmatika`
+
+    Operator aritmatika adalah operator yang biasa kita temukan untuk operasi matematika. Aritmatika sendiri merupakan cabang ilmu matematika yang membahas perhitungan sederhana seperti kali, bagi, tambah, kurang dan % yang dipakai untuk mencari sisa hasil bagi.
+
+    |Operator   |Penjelasan     |Contoh |
+    |-----------|---------------|-------|
+    |+ 	    |Penambahan 	    |a = 5 + 2  |
+    |– 	    |Pengurangan 	|a = 5 – 2  |
+    |* 	    |Perkalian 	    |a = 5 * 2  |
+    |/ 	    |Pembagian 	    |a = 5 / 2  |
+    |% 	    |Sisa hasil bagi (modulus) 	|a = 5 % 2|
+
+2. Operator Increment dan Decrement
+
+    Operator increment dan decrement adalah sebutan untuk operasi seperti a++, dan a--. Ini sebenarnya penulisan singkat dari operasi a = a + 1 serta a = a – 1.
+
+    Increment digunakan untuk menambah variabel sebanyak 1 angka, sedangkan decrement digunakan untuk mengurangi variabel sebanyak 1 angka.
+
+    Penulisannya menggunakan tanda tambah 2 kali untuk increment, dan tanda kurang 2 kali untuk decrement. Penempatan tanda tambah atau kurang ini boleh di awal seperti ++a dan --a, atau di akhir variabel seperti a++ dan a--.
+
+    Dengan demikian terdapat 4 jenis increment dan decrement dalam bahasa Java:
+
+    |Operator       |Penjelasan         | Contoh        |
+    |---------------|-------------------|---------------|
+    |Pre-increment 	    |Tambah a sebanyak 1 angka, lalu tampilkan hasilnya     |++a |	
+    |Post-increment 	|Tampilkan nilai a, lalu tambah a sebanyak 1 angka      |a++ |	
+    |Pre-decrement 	    |Kurangi a sebanyak 1 angka, lalu tampilkan hasilnya    |--a |	
+    |Post-decrement 	|Tampilkan nilai a, lalu kurangi a sebanyak 1 angka     |a-- |	
+
+
+
+3. Operator Perbandingan / Relasional
+
+    Operator perbandingan dipakai untuk membandingkan 2 buah nilai, apakah nilai tersebut sama besar, lebih kecil, lebih besar, dll. Hasil dari operator perbandingan ini adalah boolean True atau False.
+
+    Tabel berikut merangkum hasil dari operator perbandingan dalam bahasa Java:
+
+    |Operator 	|Penjelasan 	                |Contoh 	|Hasil  |
+    |-----------|-------------------------------|-----------|-------|
+    | == 	    | Sama dengan 	                | 5 == 5 	|true   |
+    | != 	    | Tidak sama dengan 	        | 5 != 5 	|false  |
+    | > 	    | Lebih besar 	                | 5 > 6 	|false  |
+    | < 	    | Lebih kecil 	                | 5 < 6 	|true   |
+    | >= 	    | Lebih besar atau sama dengan 	| 5 >= 3 	|true   |
+    | <= 	    | Lebih kecil atau sama dengan 	| 5 <= 5 	|true   |
+
+
+
+4. Operator Logika / Boolean
+
+    Operator logika dipakai untuk menghasilkan nilai boolean true atau false dari 2 kondisi atau lebih. Tabel berikut merangkum hasil dari operator logika dalam bahasa Java:
+
+    | Operator       | Nama 	    |Penjelasan | 	Contoh  |
+    |----------------|--------------|-----------|-----------|
+    | && 	|And 	|Akan menghasilkan true jika kedua operand true 	| true && false, hasilnya: false |
+    | \|\| 	|Or 	|Akan menghasilkan true jika salah satu operand true 	| true \|\| false, hasilnya: false |
+    | ! 	|Not 	|Akan menghasilkan true jika operand false 	| !false, hasilnya: true |
+
+
+
+5. Operator Bitwise
+
+    Bitwise adalah operator khusus untuk menangani operasi logika bilangan biner dalam bentuk bit.
+
+    Bilangan biner sendiri merupakan jenis bilangan yang hanya terdiri dari 2 jenis angka, yakni 0 dan 1. Jika nilai asal yang dipakai bukan bilangan biner, akan dikonversi secara otomatis oleh compiler Java menjadi bilangan biner. Misalnya 7 desimal = 0111 dalam bilangan biner.
+
+    Bahasa Java mendukung 6 jenis operator bitwise. Daftar lengkapnya dapat dilihat pada tabel berikut:
+
+    | Operator 	| Nama 	    | Contoh 	    | Biner 	        | Hasil (biner) 	| Hasil (desimal) | 
+    |-----------|-----------|---------------|-------------------|-------------------|-----------------|
+    | & 	    | AND 	    | 10 & 12 	    | 1010 & 1100 	    | 1000 	            | 8               | 
+    | \| 	    | OR 	    | 10 | 12 	    | 1010 | 1100 	    | 1110 	            | 14              | 
+    | ^ 	    | XOR 	    | 10 ^ 1 	    | 1010 ^ 1100 	    | 0110 	            | 6                | 
+    | ~ 	    | NOT 	    | ~10 	        | ~1010 	        | 0101 	            | -11 (Two’s complement) | 
+    | << 	    | Left shift  | 10 << 1 	| 1010 << 1 	    | 10100 	        | 20                | 
+    | >>      	| Right shift | 10 >> 1 	| 1010 >> 1 	    | 101 	            | 5                 | 
+
+
+6. Operator Assignment
+
+    Operator assignment adalah operator yang digunakan untuk memberikan nilai ke dalam suatu variabel. Di dalam bahasa Java, operator assignment menggunakan tanda sama dengan ” = “. Nantinya juga terdapat operator assignment gabungan, seperti ” += “, ” -= “, dsb.
+
+
+7. Operator Type Comparison
+
+    Operator type comparison adalah sebutan untuk operator khusus yang dipakai untuk pemeriksaan sebuah object. Di dalam bahasa Java operator ini menggunakan perintah `instanceof`. 
+
+
+
+### Kerjakan Praktikkum : 
+
+1. Tulis kode dibawah kemudian Simpan dengan nama file `pgame_p4_c1_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p4_c1_19001.java`)
+2. Setelah itu jalankan untuk di test di cmd/poweshell/terminal, perintahnya: `java pgame_p4_c1_19001.java`
+3. Kemudian, lanjutkan Praktikumnya dengan buat file baru untuk praktikum code selanjutnya sampai jenis operator ke-7 yaitu `instanceof`.
+
+* Code `p4_c1`: 
+
+    ```java
+
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-4 / p4
+    // Nama File        : pgame_p4_c1_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Operator - Aritmatika
+    // *****************************************
+
+
+    // Nama Class
+    class pgame_p4_c1_19001 {
+
+        public static void main(String args[])
+        {
+
+            // Latihan P4 - C1
+            int   a, b;    // buat/deklarasi variabel kosong a dan b tipe integer
+            float c, d;    // buat/deklarasi variabel kosong c dan d tipe float
+            double xab, xcd; // buat/deklarasi variabel kosong xab dan xcd tipe double
+
+            // isi variabel dengan nilai 
+            a = 5;
+            b = 10;
+            c = 15;
+            d = 3.1F;
+
+            // operasi Aritmatika Penjumlahan
+            xab = a + b;
+            xcd = c + d;
+
+            // Cetak Ke layar            
+            System.out.println(" Nama : Ikhwan (ganti nama anda)" );
+            System.out.println(" NPM  : 19001  (ganti npm anda)" );
+            System.out.println("\n Operator Aritmatika : ");
+            System.out.println("------------------");
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+
+            System.out.println("\nHasil Penambahan : ");
+            System.out.println(xab);
+            System.out.println(xcd);
+
+            // operasi Aritmatika Pengurangan
+            xab = c - a;
+            xcd = c - d;
+
+            System.out.println("\nHasil Pengurangan : ");
+            System.out.println(xab);
+            System.out.println(xcd);
+
+            // operasi Aritmatika Pembagian
+            // Lanjutkan ...
+
+
+            System.out.println("*********************************");
+
+        }
+    }
+
+
+    ```
+
+### Latihan Praktikum 4 Lanjutan Operator :
+
+3. Lanjutkan kode diatas untuk jenis operator lainnya, kemudian Simpan dengan nama file masing-masing dari `pgame_p4_c2_NPM.java` sampai `pgame_p4_c7_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_c2_19001.java`)
+4. Gunakan shell CMD atau Command Propm untuk masuk ke direktori kerja anda dan jika telah selesai menulis code-nya, silahkan di-`compile` dengan perintah `pgame_p4_c2_NPM.java`
+5. Setelah itu, hasil compile perintah ini akan menghasilkan file binari dengan nama `pgame_p4_c2_19001.class`
+6. Silahkan Eksekusi code binarinya dengan perintah  `java pgame_p4_c2_19001.java`,
+7. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil/buat hasilnya dengan di-`screenshot`  dan beri nama `pgame_p4_c2_19001.png`, 
+9. Total ada 7 file `code` yang harus dikirim yaitu: 
+    1. file: `pgame_p4_c1_19001.java`,  
+    2. file: `pgame_p4_c2_19001.java`, dan seterusnya sampai 
+    3. file: `pgame_p4_c7_19001.java`, 
+
+    dan juga masing-masing dengan hasil screenshotnya:
+    1. file: `pgame_p4_c1_19001.png`,
+    2. file: `pgame_p4_c2_19001.png`, dan seterusnya sampai
+    4. file: `pgame_p4_c7_19001.png`.
+8. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
+
+
+# Hasil Screenshot Hasil code "p4_c1" 
+
+* Melihat hasil screenshot code p4_c1: 
+    ![compile code](assets/img/pgame_p4_c1_2022-10-14_09-54-21.png)
+
+
+berlanjut ...
+
+
+
+***
+
+#### Reff Pertemuan ke 4: 
+
+1. [reff 1](https://www.duniailkom.com/tutorial-belajar-java-jenis-jenis-operator-dalam-bahasa-java/){:target="_blank"}
+2. [reff 2](http://mastahcode.com/blog/belajar-java-dasar-8-operator-unary-MLJ){:target="_blank"}
+
+
+
+***
+***
+***
+
+
+
+## PERTEMUAN TIGA 03 - Variabel & Tipe Data:
 
 |Status  | : Offline                    |
 |Waktu   | : 13/10/2022                |
 |Tema    | : Praktikum PGame - JAVA - Variabel dan Tipe Data|
 
 
-###  Materi Dasar
+###  Keyword, Variabel dan Tipe Data di Java
+
 1.  `Keyword dalam Java`
     Kata kunci adalah identifier yang telah dipesan untuk didefinisikan sebelumnya oleh Java
     untuk tujuan tertentu. Anda tidak dapat menggunakan keyword sebagai nama variabel, class,
@@ -56,7 +315,7 @@ Berikut merupakan daftar keyword yang biasa digunakan dalam Bahasa Pemrograman J
 - `char` (a character, 2 bytes)
 - `boolean` (true or false, 1 byte)
 
-### Contoh : 
+### Kerjakan Praktikkum : 
 
 1. Tulis kode dibawah kemudian Simpan dengan nama file `pgame_p3_c1_NPM.java` (ubah NPM pada nama file dengan 5 digit terakhir nomor NPM anda, contoh : `pgame_p3_c1_19001.java`)
 2. Setelah itu jalankan untuk di test di cmd/poweshell/terminal, perintahnya: `java pgame_p3_c1_19001.java`
