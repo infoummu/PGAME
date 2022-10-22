@@ -124,7 +124,7 @@ Berdasarkan Fungsinya, Jenis Operator dapat dibagi menjadi beberapa jenis sebaga
     | Operator 	| Nama 	    | Contoh 	    | Biner 	        | Hasil (biner) 	| Hasil (desimal) | 
     |-----------|-----------|---------------|-------------------|-------------------|-----------------|
     | & 	    | AND 	    | 10 & 12 	    | 1010 & 1100 	    | 1000 	            | 8               | 
-    | \| 	    | OR 	    | 10 | 12 	    | 1010 | 1100 	    | 1110 	            | 14              | 
+    | \| 	    | OR 	    | 10 \| 12 	    | 1010 \| 1100 	    | 1110 	            | 14              | 
     | ^ 	    | XOR 	    | 10 ^ 1 	    | 1010 ^ 1100 	    | 0110 	            | 6                | 
     | ~ 	    | NOT 	    | ~10 	        | ~1010 	        | 0101 	            | -11 (Two’s complement) | 
     | << 	    | Left shift  | 10 << 1 	| 1010 << 1 	    | 10100 	        | 20                | 
@@ -235,14 +235,41 @@ Berdasarkan Fungsinya, Jenis Operator dapat dibagi menjadi beberapa jenis sebaga
 8. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
 
 
-# Hasil Screenshot Hasil code "p4_c1" 
+### Hasil Screenshot Hasil code "p4_c1" 
 
 * Melihat hasil screenshot code p4_c1: 
     ![compile code](assets/img/pgame_p4_c1_2022-10-14_09-54-21.png)
 
 
-berlanjut ...
+### Yang Hadir Pertemuan Ke-4
 
+1. Yang Menyelesaikan Praktikumm `p4_c1` - `p4_c7` di LAB : 
+
+    |No. | NPM      | Nama          |
+    |----|----------|---------------|
+    | 1. | 19059 	| MUHAMMAD ARMAN | 
+    | 2. | 19076 	| CAHYA ANDRIANTI | 
+    | 3. | 19109 	| YUSUP HI BISNU | 
+    | 4. | 19132 	| ANDIKA PRATAMA ODE | 
+    | 5. | 19137 	| MUHAMMAD IQRAM LATULUMAMINA | 
+    | 6. | 19139 	| MUHAMMAD FADLI KHARIE | 
+
+
+2. Yang Harus kumpul Sebelum Sabtu 22/10/2022 :
+
+    |No. | NPM      | Nama          |
+    |----|----------|---------------|
+    | 1. | 22127 | Ramli  | 
+    | 2. | 19084 | Akbar | 
+    | 3. | 19099 | Anti  | 
+    | 4. | 19079 | Ladeli | 
+    | 5. | 19035 | Aditya  | 
+    | 6. | 19063 | Fatima | 
+    | 7. | 19087 | Laila | 
+    | 8. | 19062 | Nadia | 
+    | 9. | 19081 | Julaiha | 
+    | 10. | 19112 | Nandi | 
+    | 11. | 19114 | Ira | 
 
 
 ***
