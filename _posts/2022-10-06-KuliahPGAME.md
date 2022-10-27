@@ -3,6 +3,296 @@ title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
 
+
+## PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):
+
+|Status  | : Offline                   |
+|Waktu   | : 27/10/2022                |
+|Tema    | : Praktikum PGame - JAVA - PERCABANGAN (CONDITIONAL)|
+
+
+
+Sebelumnya pada pertemuan ke-3 telah dibahas jenis-jenis tipe data di dalam bahasa Java. Untuk mengolah data tersebut, butuh operator (pertemuan ke-4). Oleh karena itu pertemuan kali ini akan membahas tentang jenis percabangan dalam bahasa pemrograman Java.
+
+### Apa itu Percabangan dalam Java ?
+
+1.  Dalam kehidupan sehari-hari pasti kita sering menghadapi sebuah pilihan dan begitu juga dalam program. Untuk itu kita membutuhkan algoritma percabangan.
+
+    Konsep percabangan adalah pemilihan statemen yang akan dieksekusi dimana pilihan tersebut berdasarkan kondisi tertentu untuk mengarahkan suatu proses.
+
+2.  Percabangan hanyalah sebuah istilah yang digunakan untuk menyebut alur program yang bercabang.
+
+    Percabangan juga dikenal dengan `“Control Flow”`, `“Struktur Kondisi”`, `“Struktur IF”`, `“Decision”`, dan lainnya. Semuanya itu sama.
+
+#### Bentuk PERCABANGAN dan CONTOH: 
+
+
+
+1.  Percabangan `IF`
+
+    Percabangan ini hanya memiliki `satu kondisi` pilihan. Artinya, pilihan di dalam IF hanya akan dikerjakan kalau kondisinya benar.
+
+    Contoh 1, `IF` (satu kondisi): 
+    ```java
+    // Teorinya: 
+    if( kondisi ) { // hanya satu kondisi
+        // lakukan sesuatu kalau kondisi benar
+        // contoh: cetak pesan ke layar jika kondisi benar 
+    }
+
+    // Contoh Penerapan Codenya:
+    // **************************
+
+    // Contoh PRAKTIKUM p5_c1
+    // -----------------------------
+ 
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-5 / p5
+    // Nama File        : pgame_p5_c1_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Percabangan - IF
+    // *****************************************
+
+    // Nama Class
+    class pgame_p5_c1_19001 {
+
+        public static void main(String args[])
+        {
+            int A=5;
+            if( A == 5) { // Periksa kondisi (jika nilai A == 5)
+                // Jika kondisi Benar maka, cetak ke layar pesan dibawah
+                System.out.println("Ya benar, A bernilai 5");
+            }
+        }
+    }
+
+    ```
+
+2.  Percabangan `IF` dan `ELSE` / `IF`, `ELSE IF` dan `ELSE`
+
+    Sedangkan percabangan IF, ELSE IF dan ELSE memiliki pilihan alternatif dan dapat menerima `beberapa kondisi` atau `lebih dari satu kondisi`, dan kalau kondisinya semua tidak terpenuhi maka kondisi ELSE yang terakhir yang akan dilaksanakan.
+
+    * Contoh 1, `IF` dan `ELSE` (multi kondisi): 
+
+    ```java
+    // Teorinya: 
+    if( kondisi ) {
+    
+        // lakukan sesuatu kalau kondisi BENAR
+        // contoh: cetak pesan ke layar jika kondisi BENAR
+    
+    } else {
+    
+        // lakukan sesuatu kalau kondisi SALAH
+        // contoh: cetak pesan ke layar jika kondisi SALAH      
+    
+    }
+
+    // **************************
+    // Contoh Penerapan Codenya:
+    // **************************
+
+    // Contoh PRAKTIKUM p5_c2
+    // -----------------------------
+ 
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-5 / p5
+    // Nama File        : pgame_p5_c2_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Percabangan - IF dan ELSE
+    // *****************************************
+
+    // Nama Class / Nama file
+    class pgame_p5_c2_19001 {
+
+        public static void main(String args[])
+        {
+            int B=5;
+            if( B == 5) { // Periksa kondisi (jika nilai B == 5)
+            
+                // Jika Benar maka, cetak ke layar pesan dibawah
+                System.out.println("Ya benar, B bernilai 15");
+            
+            } else { // Kondisi Tidak Sesuai (jika nilai B != 15)
+            
+                // Jika Tidak sesuai kondisi, maka cetak ke layar pesan dibawah
+                System.out.println("SALAH, B TIDAK SAMA DENGAN 15");
+            
+            }
+       }
+    }
+    ```
+
+    * Contoh 2 `IF`, `IF ELSE` dan `ELSE` (multi kondisi): 
+
+    ```java
+    // Teorinya: 
+    if( kondisi 1 ) { // kondisi 1
+    
+        // lakukan sesuatu kalau kondisi 1 BENAR
+        // contoh: cetak pesan ke layar jika kondisi 1 BENAR
+    
+    } else if ( kondisi 2 ) { // kondisi 2 {
+    
+        // lakukan sesuatu kalau kondisi 2 BENAR
+        // contoh: cetak pesan ke layar jika kondisi 2 BENAR     
+    
+    } else {
+    
+        // lakukan sesuatu kalau kondisi 1 dan 2 SALAH
+        // contoh: cetak pesan ke layar jika kondisi 1 dan 2 SALAH      
+    
+    }
+
+
+    // **************************
+    // Contoh Penerapan Codenya:
+    // **************************
+
+    // Contoh PRAKTIKUM p5_c3
+    // -----------------------------
+ 
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-5 / p5
+    // Nama File        : pgame_p5_c3_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Percabangan - IF, IF ELSE dan ELSE
+    // *****************************************
+
+    // Nama Class / Nama file
+    class pgame_p5_c3_19001 {
+
+        public static void main(String args[])
+        {
+            int C=8;
+            if ( C == 8) { // Periksa kondisi 1 (jika nilai C == 8)
+            
+                // Jika Benar maka, cetak ke layar pesan dibawah
+                System.out.println("Ya benar, C bernilai " + C);
+            
+            } else if ( C >= 4) { // Periksa kondisi 2 (jika nilai C >= 4)
+            
+                // Jika Benar maka, cetak ke layar pesan dibawah
+                System.out.println("Ya benar, C >= 4");
+            
+            } else { // Kondisi 1 dan Kondisi 2 Tidak Sesuai 
+            
+                // Jika kondisi 1 dan 2 Tidak sesuai, maka cetak ke layar pesan dibawah
+                System.out.println("SALAH SEMUA  !!!");
+            
+            }
+        }
+    }
+
+    ```
+
+3.  Percabangan `SWITCH` dan `CASE`
+
+    Percabangan `SWITCH` dan `CASE` sebenarnya adalah bentuk lain dari IF/ELSE/IF.
+
+    Bedanya, percabangan ini menggunakan kata kunci `switch` dan `case`.
+
+    * Contoh 1 `SWITCH` dan `CASE`:
+
+    ```java
+
+    // **************************
+    // Contoh Penerapan Codenya:
+    // **************************
+
+    // Contoh PRAKTIKUM p5_c4
+    // -----------------------------
+
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-5 / p5
+    // Nama File        : pgame_p5_c4_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Percabangan - SWITCH dan CASE
+    // *****************************************
+
+    // Nama Class / Nama file
+    class pgame_p5_c4_19001 {
+
+        public static void main(String args[])
+        {
+
+            char NILAI='B';
+            switch (NILAI) {
+            case 'A':
+
+                // Jika variabel "NILAI" isinya "A"
+                System.out.println("Dapat Nilai A");
+                break;
+                
+            case 'B':
+
+                // Jika variabel "NILAI" isinya "B"
+                System.out.println("Dapat Nilai B");
+                break;
+                
+            default:
+
+                // Jika variabel "NILAI" isinya SELAIN "A" dan "B"
+                System.out.println("Dapat Nilai Kurang");
+            }
+        }
+    }
+            
+
+    ```
+
+### Arahan Praktikum ke 5: 
+
+3. Tulis code pada contoh-contoh diatas dan lakukan praktikum sebagaimana anda praktikum di LAB pada pertemuan2 sebelumnya,
+6. Kemudian Silahkan lakukan test untuk setiap code yang sudah ditulis,
+7. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil hasil `screenshot`-nya dan beri nama `pgame_p5_c1_19001.png` sampai dengan `pgame_p5_c5_19001.png`, 
+8. Total ada 5 file `code` yang harus dikirim yaitu: 
+    1. file: `pgame_p5_c1_19001.java`,  
+    2. file: `pgame_p5_c2_19001.java`, dan seterusnya sampai 
+    3. file: `pgame_p5_c5_19001.java`, 
+
+    dan juga masing-masing dengan hasil `screenshot`nya:
+    1. file: `pgame_p5_c1_19001.png`,
+    2. file: `pgame_p5_c2_19001.png`, dan seterusnya sampai
+    4. file: `pgame_p5_c5_19001.png`.
+9. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"},
+10. Kumpulkan sebelum Praktikum `ke-6` yang akan datang 03/11/2022.
+
+
+### TUGAS Praktikum Pertemuan ke 5:
+
+*   TUGAS, Buatlah sebuah code untuk kondisi sebagai berikut:
+
+    1. Sebuah variabel bernama NPM
+    2. Jika Nilai NPM <= 50, maka cetak ke layar " Anda INFO 1"
+    3. Jika Nilai NPM <= 100, maka cetak ke layar " Anda INFO 2"
+    4. Jika Nilai NPM <= 150, maka cetak ke layar " Anda INFO 3"
+    5. Selain itu cetak ke Layar " Anda TIDAK TERDADTAR !"
+
+
+*   Tulis dan Simpan TUGAS anda diatas dengan nama file `pgame_p5_c5_19001.java`, dan hasilnya berupa `screenshot` dengan nama file `pgame_p5_c5_19001.png`,
+*   Setelah Selesai, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}.
+
+#### Referensi Pertemuan ke 5: 
+
+1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+2. [referensi 2 - petanikode.com](https://www.petanikode.com/java-percabangan/){:target="_blank"}
+3. [referensi 3 - kodedasar.com](https://kodedasar.com/blog/percabangan-java/){:target="_blank"}
+
+
+***
+***
+***
+
+
 ## PERTEMUAN EMPAT 04 - OPERATOR :
 
 |Status  | : Offline                   |
@@ -38,7 +328,7 @@ Berdasarkan Sifat Operator dari `jumlah OPERAND-nya`, operator dibagi menjadi 3 
     |-	    |Negatif (tanda nilai variabel tersebut bernilai negatif)   |
     |++	    |Tambah 1 (nilai variabel ditambahkan satu)                 |
     |--     |kurang 1 (nilai variabel dikurangi satu)                   |
-    |!	    |kebalikan nilai boolean (artinya misal variabel awal bernilai true, setelah di manipulasi dengan operator ! menjadi nilainya false)                |
+    |!	    |kebalikan nilai boolean (artinya misal variabel awal bernilai true, setelah di manipulasi dengan operator ! menjadi nilainya false) |
 
 
 2. Operator `Binary`,

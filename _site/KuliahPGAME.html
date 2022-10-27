@@ -15,8 +15,8 @@
 <meta property="og:title" content="Kuliah PEMROGRAMAN GAME" />
 <meta name="author" content="Informatika UMMU" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="PERTEMUAN EMPAT 04 - OPERATOR :" />
-<meta property="og:description" content="PERTEMUAN EMPAT 04 - OPERATOR :" />
+<meta name="description" content="PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):" />
+<meta property="og:description" content="PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):" />
 <link rel="canonical" href="http://192.168.56.118:4000/PGAME/KuliahPGAME" />
 <meta property="og:url" content="http://192.168.56.118:4000/PGAME/KuliahPGAME" />
 <meta property="og:site_name" content="Info UMMU Ternate" />
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Kuliah PEMROGRAMAN GAME" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Informatika UMMU","url":"https://infoummu.github.io/hacker-blog"},"dateModified":"2022-10-06T00:00:00-04:00","datePublished":"2022-10-06T00:00:00-04:00","description":"PERTEMUAN EMPAT 04 - OPERATOR :","headline":"Kuliah PEMROGRAMAN GAME","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.56.118:4000/PGAME/KuliahPGAME"},"url":"http://192.168.56.118:4000/PGAME/KuliahPGAME"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Informatika UMMU","url":"https://infoummu.github.io/hacker-blog"},"dateModified":"2022-10-06T00:00:00-04:00","datePublished":"2022-10-06T00:00:00-04:00","description":"PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):","headline":"Kuliah PEMROGRAMAN GAME","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.56.118:4000/PGAME/KuliahPGAME"},"url":"http://192.168.56.118:4000/PGAME/KuliahPGAME"}</script>
 <!-- End Jekyll SEO tag -->
  
 
@@ -149,7 +149,328 @@
         <article>
   <h2>Kuliah PEMROGRAMAN GAME</h2>
   <time datetime="2022-10-06T00:00:00-04:00" class="by-line">06 Oct 2022</time>
-  <h2 id="pertemuan-empat-04---operator-">PERTEMUAN EMPAT 04 - OPERATOR :</h2>
+  <h2 id="pertemuan-lima-05---percabangan-conditional">PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Status</td>
+      <td>: Offline</td>
+    </tr>
+    <tr>
+      <td>Waktu</td>
+      <td>: 27/10/2022</td>
+    </tr>
+    <tr>
+      <td>Tema</td>
+      <td>: Praktikum PGame - JAVA - PERCABANGAN (CONDITIONAL)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sebelumnya pada pertemuan ke-3 telah dibahas jenis-jenis tipe data di dalam bahasa Java. Untuk mengolah data tersebut, butuh operator (pertemuan ke-4). Oleh karena itu pertemuan kali ini akan membahas tentang jenis percabangan dalam bahasa pemrograman Java.</p>
+
+<h3 id="apa-itu-percabangan-dalam-java-">Apa itu Percabangan dalam Java ?</h3>
+
+<ol>
+  <li>
+    <p>Dalam kehidupan sehari-hari pasti kita sering menghadapi sebuah pilihan dan begitu juga dalam program. Untuk itu kita membutuhkan algoritma percabangan.</p>
+
+    <p>Konsep percabangan adalah pemilihan statemen yang akan dieksekusi dimana pilihan tersebut berdasarkan kondisi tertentu untuk mengarahkan suatu proses.</p>
+  </li>
+  <li>
+    <p>Percabangan hanyalah sebuah istilah yang digunakan untuk menyebut alur program yang bercabang.</p>
+
+    <p>Percabangan juga dikenal dengan <code class="language-plaintext highlighter-rouge">“Control Flow”</code>, <code class="language-plaintext highlighter-rouge">“Struktur Kondisi”</code>, <code class="language-plaintext highlighter-rouge">“Struktur IF”</code>, <code class="language-plaintext highlighter-rouge">“Decision”</code>, dan lainnya. Semuanya itu sama.</p>
+  </li>
+</ol>
+
+<h4 id="bentuk-percabangan-dan-contoh">Bentuk PERCABANGAN dan CONTOH:</h4>
+
+<ol>
+  <li>
+    <p>Percabangan <code class="language-plaintext highlighter-rouge">IF</code></p>
+
+    <p>Percabangan ini hanya memiliki <code class="language-plaintext highlighter-rouge">satu kondisi</code> pilihan. Artinya, pilihan di dalam IF hanya akan dikerjakan kalau kondisinya benar.</p>
+
+    <p>Contoh 1, <code class="language-plaintext highlighter-rouge">IF</code> (satu kondisi):</p>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Teorinya: </span>
+<span class="k">if</span><span class="o">(</span> <span class="n">kondisi</span> <span class="o">)</span> <span class="o">{</span> <span class="c1">// hanya satu kondisi</span>
+    <span class="c1">// lakukan sesuatu kalau kondisi benar</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi benar </span>
+<span class="o">}</span>
+
+<span class="c1">// Contoh Penerapan Codenya:</span>
+<span class="c1">// **************************</span>
+
+<span class="c1">// Contoh PRAKTIKUM p5_c1</span>
+<span class="c1">// -----------------------------</span>
+ 
+<span class="c1">// Anak2 Informatika UMMU Ternate</span>
+<span class="c1">// Mata kuliah      : Pemrograman Game</span>
+<span class="c1">// Praktikum        : Ke-5 / p5</span>
+<span class="c1">// Nama File        : pgame_p5_c1_19001 (ganti dengan npm masing2)</span>
+<span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+<span class="c1">// NPM              : 19001 (contoh saja)</span>
+<span class="c1">// Tema             : Percabangan - IF</span>
+<span class="c1">// *****************************************</span>
+
+<span class="c1">// Nama Class</span>
+<span class="kd">class</span> <span class="nc">pgame_p5_c1_19001</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+        <span class="kt">int</span> <span class="no">A</span><span class="o">=</span><span class="mi">5</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span> <span class="no">A</span> <span class="o">==</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Periksa kondisi (jika nilai A == 5)</span>
+            <span class="c1">// Jika kondisi Benar maka, cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Ya benar, A bernilai 5"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Percabangan <code class="language-plaintext highlighter-rouge">IF</code> dan <code class="language-plaintext highlighter-rouge">ELSE</code> / <code class="language-plaintext highlighter-rouge">IF</code>, <code class="language-plaintext highlighter-rouge">ELSE IF</code> dan <code class="language-plaintext highlighter-rouge">ELSE</code></p>
+
+    <p>Sedangkan percabangan IF, ELSE IF dan ELSE memiliki pilihan alternatif dan dapat menerima <code class="language-plaintext highlighter-rouge">beberapa kondisi</code> atau <code class="language-plaintext highlighter-rouge">lebih dari satu kondisi</code>, dan kalau kondisinya semua tidak terpenuhi maka kondisi ELSE yang terakhir yang akan dilaksanakan.</p>
+
+    <ul>
+      <li>Contoh 1, <code class="language-plaintext highlighter-rouge">IF</code> dan <code class="language-plaintext highlighter-rouge">ELSE</code> (multi kondisi):</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Teorinya: </span>
+<span class="k">if</span><span class="o">(</span> <span class="n">kondisi</span> <span class="o">)</span> <span class="o">{</span>
+    
+    <span class="c1">// lakukan sesuatu kalau kondisi BENAR</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi BENAR</span>
+    
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    
+    <span class="c1">// lakukan sesuatu kalau kondisi SALAH</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi SALAH      </span>
+    
+<span class="o">}</span>
+
+<span class="c1">// **************************</span>
+<span class="c1">// Contoh Penerapan Codenya:</span>
+<span class="c1">// **************************</span>
+
+<span class="c1">// Contoh PRAKTIKUM p5_c2</span>
+<span class="c1">// -----------------------------</span>
+ 
+<span class="c1">// Anak2 Informatika UMMU Ternate</span>
+<span class="c1">// Mata kuliah      : Pemrograman Game</span>
+<span class="c1">// Praktikum        : Ke-5 / p5</span>
+<span class="c1">// Nama File        : pgame_p5_c2_19001 (ganti dengan npm masing2)</span>
+<span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+<span class="c1">// NPM              : 19001 (contoh saja)</span>
+<span class="c1">// Tema             : Percabangan - IF dan ELSE</span>
+<span class="c1">// *****************************************</span>
+
+<span class="c1">// Nama Class / Nama file</span>
+<span class="kd">class</span> <span class="nc">pgame_p5_c2_19001</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+        <span class="kt">int</span> <span class="no">B</span><span class="o">=</span><span class="mi">5</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span> <span class="no">B</span> <span class="o">==</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Periksa kondisi (jika nilai B == 5)</span>
+            
+            <span class="c1">// Jika Benar maka, cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Ya benar, B bernilai 15"</span><span class="o">);</span>
+            
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">// Kondisi Tidak Sesuai (jika nilai B != 15)</span>
+            
+            <span class="c1">// Jika Tidak sesuai kondisi, maka cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"SALAH, B TIDAK SAMA DENGAN 15"</span><span class="o">);</span>
+            
+        <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Contoh 2 <code class="language-plaintext highlighter-rouge">IF</code>, <code class="language-plaintext highlighter-rouge">IF ELSE</code> dan <code class="language-plaintext highlighter-rouge">ELSE</code> (multi kondisi):</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Teorinya: </span>
+<span class="k">if</span><span class="o">(</span> <span class="n">kondisi</span> <span class="mi">1</span> <span class="o">)</span> <span class="o">{</span> <span class="c1">// kondisi 1</span>
+    
+    <span class="c1">// lakukan sesuatu kalau kondisi 1 BENAR</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi 1 BENAR</span>
+    
+<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">kondisi</span> <span class="mi">2</span> <span class="o">)</span> <span class="o">{</span> <span class="c1">// kondisi 2 {</span>
+    
+    <span class="c1">// lakukan sesuatu kalau kondisi 2 BENAR</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi 2 BENAR     </span>
+    
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    
+    <span class="c1">// lakukan sesuatu kalau kondisi 1 dan 2 SALAH</span>
+    <span class="c1">// contoh: cetak pesan ke layar jika kondisi 1 dan 2 SALAH      </span>
+    
+<span class="o">}</span>
+
+
+<span class="c1">// **************************</span>
+<span class="c1">// Contoh Penerapan Codenya:</span>
+<span class="c1">// **************************</span>
+
+<span class="c1">// Contoh PRAKTIKUM p5_c3</span>
+<span class="c1">// -----------------------------</span>
+ 
+<span class="c1">// Anak2 Informatika UMMU Ternate</span>
+<span class="c1">// Mata kuliah      : Pemrograman Game</span>
+<span class="c1">// Praktikum        : Ke-5 / p5</span>
+<span class="c1">// Nama File        : pgame_p5_c3_19001 (ganti dengan npm masing2)</span>
+<span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+<span class="c1">// NPM              : 19001 (contoh saja)</span>
+<span class="c1">// Tema             : Percabangan - IF, IF ELSE dan ELSE</span>
+<span class="c1">// *****************************************</span>
+
+<span class="c1">// Nama Class / Nama file</span>
+<span class="kd">class</span> <span class="nc">pgame_p5_c3_19001</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+        <span class="kt">int</span> <span class="no">C</span><span class="o">=</span><span class="mi">8</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span> <span class="no">C</span> <span class="o">==</span> <span class="mi">8</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Periksa kondisi 1 (jika nilai C == 8)</span>
+            
+            <span class="c1">// Jika Benar maka, cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Ya benar, C bernilai "</span> <span class="o">+</span> <span class="no">C</span><span class="o">);</span>
+            
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="no">C</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Periksa kondisi 2 (jika nilai C &gt;= 4)</span>
+            
+            <span class="c1">// Jika Benar maka, cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Ya benar, C &gt;= 4"</span><span class="o">);</span>
+            
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">// Kondisi 1 dan Kondisi 2 Tidak Sesuai </span>
+            
+            <span class="c1">// Jika kondisi 1 dan 2 Tidak sesuai, maka cetak ke layar pesan dibawah</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"SALAH SEMUA  !!!"</span><span class="o">);</span>
+            
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Percabangan <code class="language-plaintext highlighter-rouge">SWITCH</code> dan <code class="language-plaintext highlighter-rouge">CASE</code></p>
+
+    <p>Percabangan <code class="language-plaintext highlighter-rouge">SWITCH</code> dan <code class="language-plaintext highlighter-rouge">CASE</code> sebenarnya adalah bentuk lain dari IF/ELSE/IF.</p>
+
+    <p>Bedanya, percabangan ini menggunakan kata kunci <code class="language-plaintext highlighter-rouge">switch</code> dan <code class="language-plaintext highlighter-rouge">case</code>.</p>
+
+    <ul>
+      <li>Contoh 1 <code class="language-plaintext highlighter-rouge">SWITCH</code> dan <code class="language-plaintext highlighter-rouge">CASE</code>:</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">// **************************</span>
+<span class="c1">// Contoh Penerapan Codenya:</span>
+<span class="c1">// **************************</span>
+
+<span class="c1">// Contoh PRAKTIKUM p5_c4</span>
+<span class="c1">// -----------------------------</span>
+
+<span class="c1">// Anak2 Informatika UMMU Ternate</span>
+<span class="c1">// Mata kuliah      : Pemrograman Game</span>
+<span class="c1">// Praktikum        : Ke-5 / p5</span>
+<span class="c1">// Nama File        : pgame_p5_c4_19001 (ganti dengan npm masing2)</span>
+<span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+<span class="c1">// NPM              : 19001 (contoh saja)</span>
+<span class="c1">// Tema             : Percabangan - SWITCH dan CASE</span>
+<span class="c1">// *****************************************</span>
+
+<span class="c1">// Nama Class / Nama file</span>
+<span class="kd">class</span> <span class="nc">pgame_p5_c4_19001</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+
+        <span class="kt">char</span> <span class="no">NILAI</span><span class="o">=</span><span class="sc">'B'</span><span class="o">;</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="no">NILAI</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="sc">'A'</span><span class="o">:</span>
+
+            <span class="c1">// Jika variabel "NILAI" isinya "A"</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Dapat Nilai A"</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+                
+        <span class="k">case</span> <span class="sc">'B'</span><span class="o">:</span>
+
+            <span class="c1">// Jika variabel "NILAI" isinya "B"</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Dapat Nilai B"</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+                
+        <span class="k">default</span><span class="o">:</span>
+
+            <span class="c1">// Jika variabel "NILAI" isinya SELAIN "A" dan "B"</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Dapat Nilai Kurang"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+            
+
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="arahan-praktikum-ke-5">Arahan Praktikum ke 5:</h3>
+
+<ol>
+  <li>Tulis code pada contoh-contoh diatas dan lakukan praktikum sebagaimana anda praktikum di LAB pada pertemuan2 sebelumnya,</li>
+  <li>Kemudian Silahkan lakukan test untuk setiap code yang sudah ditulis,</li>
+  <li>Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil hasil <code class="language-plaintext highlighter-rouge">screenshot</code>-nya dan beri nama <code class="language-plaintext highlighter-rouge">pgame_p5_c1_19001.png</code> sampai dengan <code class="language-plaintext highlighter-rouge">pgame_p5_c5_19001.png</code>,</li>
+  <li>Total ada 5 file <code class="language-plaintext highlighter-rouge">code</code> yang harus dikirim yaitu:
+    <ol>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c1_19001.java</code>,</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c2_19001.java</code>, dan seterusnya sampai</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c5_19001.java</code>,</li>
+    </ol>
+
+    <p>dan juga masing-masing dengan hasil <code class="language-plaintext highlighter-rouge">screenshot</code>nya:</p>
+    <ol>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c1_19001.png</code>,</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c2_19001.png</code>, dan seterusnya sampai</li>
+      <li>file: <code class="language-plaintext highlighter-rouge">pgame_p5_c5_19001.png</code>.</li>
+    </ol>
+  </li>
+  <li>Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini <a href="https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing" target="_blank">GDRIVE</a>,</li>
+  <li>Kumpulkan sebelum Praktikum <code class="language-plaintext highlighter-rouge">ke-6</code> yang akan datang 03/11/2022.</li>
+</ol>
+
+<h3 id="tugas-praktikum-pertemuan-ke-5">TUGAS Praktikum Pertemuan ke 5:</h3>
+
+<ul>
+  <li>
+    <p>TUGAS, Buatlah sebuah code untuk kondisi sebagai berikut:</p>
+
+    <ol>
+      <li>Sebuah variabel bernama NPM</li>
+      <li>Jika Nilai NPM &lt;= 50, maka cetak ke layar “ Anda INFO 1”</li>
+      <li>Jika Nilai NPM &lt;= 100, maka cetak ke layar “ Anda INFO 2”</li>
+      <li>Jika Nilai NPM &lt;= 150, maka cetak ke layar “ Anda INFO 3”</li>
+      <li>Selain itu cetak ke Layar “ Anda TIDAK TERDADTAR !”</li>
+    </ol>
+  </li>
+  <li>Tulis dan Simpan TUGAS anda diatas dengan nama file <code class="language-plaintext highlighter-rouge">pgame_p5_c5_19001.java</code>, dan hasilnya berupa <code class="language-plaintext highlighter-rouge">screenshot</code> dengan nama file <code class="language-plaintext highlighter-rouge">pgame_p5_c5_19001.png</code>,</li>
+  <li>Setelah Selesai, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini <a href="https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing" target="_blank">GDRIVE</a>.</li>
+</ul>
+
+<h4 id="referensi-pertemuan-ke-5">Referensi Pertemuan ke 5:</h4>
+
+<ol>
+  <li><a href="https://infoummu.github.io/PGAME/Reff" target="_blank">referensi 1 - pgame/reff</a></li>
+  <li><a href="https://www.petanikode.com/java-percabangan/" target="_blank">referensi 2 - petanikode.com</a></li>
+  <li><a href="https://kodedasar.com/blog/percabangan-java/" target="_blank">referensi 3 - kodedasar.com</a></li>
+</ol>
+
+<hr />
+<hr />
+<hr />
+
+<h2 id="pertemuan-empat-04---operator-">PERTEMUAN EMPAT 04 - OPERATOR :</h2>
 
 <table>
   <tbody>
