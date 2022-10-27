@@ -6,7 +6,7 @@ published: true
 
 ## PERTEMUAN LIMA 05 - PERCABANGAN (CONDITIONAL):
 
-|Status  | : Offline                   |
+|Status  | : Online                   |
 |Waktu   | : 27/10/2022                |
 |Tema    | : Praktikum PGame - JAVA - PERCABANGAN (CONDITIONAL)|
 
@@ -270,13 +270,11 @@ Sebelumnya pada pertemuan ke-3 telah dibahas jenis-jenis tipe data di dalam baha
 ### TUGAS Praktikum Pertemuan ke 5:
 
 *   TUGAS, Buatlah sebuah code untuk kondisi sebagai berikut:
-
     1. Sebuah variabel bernama NPM
     2. Jika Nilai NPM <= 50, maka cetak ke layar " Anda INFO 1"
     3. Jika Nilai NPM <= 100, maka cetak ke layar " Anda INFO 2"
     4. Jika Nilai NPM <= 150, maka cetak ke layar " Anda INFO 3"
     5. Selain itu cetak ke Layar " Anda TIDAK TERDADTAR !"
-
 
 *   Tulis dan Simpan TUGAS anda diatas dengan nama file `pgame_p5_c5_19001.java`, dan hasilnya berupa `screenshot` dengan nama file `pgame_p5_c5_19001.png`,
 *   Setelah Selesai, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}.
