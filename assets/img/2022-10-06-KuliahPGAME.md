@@ -64,181 +64,82 @@ for (nilai_awal/inisialisasi; kondisi; tambah/kurang) {
 4. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"},
 5. Kumpulkan sebelum Praktikum `ke-7` yang akan datang 10/11/2022.
 
-#### 1. Contoh Code `WHILE`
+#### Contoh Code WHILE
+
+
 
 *   Tulis code berikut dan simpan dengan nama file `pgame_p6_c1_19001.java`, jika berhasil dijalankan silahkan ambil `screenshot`-nya dan simpan dengan nama file `pgame_p6_c1_19001.png`.
 
     ```java
 
-    // Contoh PRAKTIKUM p6_c1
-    // -----------------------------
+        // Contoh PRAKTIKUM p6_c1
+        // -----------------------------
 
-    // Anak2 Informatika UMMU Ternate
-    // Mata kuliah      : Pemrograman Game
-    // Praktikum        : Ke-6 / p6
-    // Nama File        : pgame_p6_c1_19001 (ganti dengan npm masing2)
-    // Nama Mahasiswa   : Ganti dengan Nama Anda 
-    // NPM              : 19001 (contoh saja)
-    // Tema             : Pengulangan - WHILE
-    // *****************************************
+        // Anak2 Informatika UMMU Ternate
+        // Mata kuliah      : Pemrograman Game
+        // Praktikum        : Ke-6 / p6
+        // Nama File        : pgame_p6_c1_19001 (ganti dengan npm masing2)
+        // Nama Mahasiswa   : Ganti dengan Nama Anda 
+        // NPM              : 19001 (contoh saja)
+        // Tema             : Pengulangan - WHILE
+        // *****************************************
 
-    // Nama Class / Nama file
-    class pgame_p6_c1_19001 {
+        // Nama Class / Nama file
+        class pgame_p6_c1_19001 {
 
-        public static void main(String args[])
-        {
-            // Cetak ke layar dari 0 ke 5        
-            System.out.println("*** data 0 ke 5 ************");
-            int j = 0;
-                while (j <= 5) {
-                System.out.println(" Cetak data ke -> " + j);
-                j++;
-            }
+            public static void main(String args[])
+            {
+                System.out.println("\n*******************************\n");
 
-            // Cetak ke layar dari 5 ke 0
-            System.out.println("\n*** data 5 ke 0 ***********");        
-            int i = 5;
-                while (i >= 0) {
-                System.out.println(" Cetak data ke -> " + i);
-                i--;
+                // Cetak ke layar dari 0 ke 5
+                int j = 0;
+                    while (j <= 5) {
+                    System.out.println(" Cetak data Ulangan ke -> " + j);
+                    j++;
+                }
+
+                System.out.println("\n------------------------------\n");
+
+                // Cetak ke layar dari 5 ke 0
+                int i = 5;
+                    while (i >= 0) {
+                    System.out.println(" Cetak data Ulangan ke -> " + i);
+                    i--;
+                }                
+
+                System.out.println("\n*******************************\n");
+ 
             }
         }
-    }
 
     ```
 
-* Hasil `screenshot` code `WHILE` diatas dapat dilihat gambar berikut: 
+
+* Hasil `screenshot` code diatas dapat dilihat gambar berikut: 
 
     ![hasil ss p6_c1](assets/img/pgame_p6_c1_19001.png)
 
-#### 2. Contoh Code `DO` - `WHILE`
-
-*   Tulis code berikut dan simpan dengan nama file `pgame_p6_c2_19001.java`, jika berhasil dijalankan silahkan ambil `screenshot`-nya dan simpan dengan nama file `pgame_p6_c2_19001.png`.
 
 
 
-    ```java
+```java
 
-    // Contoh PRAKTIKUM p6_c2
-    // -----------------------------
+ print();
+ System.out.println();
 
-    // Anak2 Informatika UMMU Ternate
-    // Mata kuliah      : Pemrograman Game
-    // Praktikum        : Ke-6 / p6
-    // Nama File        : pgame_p6_c2_19001 (ganti dengan npm masing2)
-    // Nama Mahasiswa   : Ganti dengan Nama Anda 
-    // NPM              : 19001 (contoh saja)
-    // Tema             : Pengulangan - DO-WHILE
-    // *****************************************
-
-    // Nama Class / Nama file
-    class pgame_p6_c2_19001 {
-
-        public static void main(String args[])
-        {
-            // Cetak ke layar dari 0 ke 5        
-            System.out.println("*** data 0 ke 5 ************");
-            int j = 0;
-                while (j <= 5) {
-                System.out.println(" Cetak data ke -> " + j);
-                j++;
-            }
-
-            // Cetak ke layar dari 5 ke 0
-            System.out.println("\n*** data 5 ke 0 ***********");        
-            int i = 5;
-                while (i >= 0) {
-                System.out.println(" Cetak data ke -> " + i);
-                i--;
-            }
-        }
-    }
-
-    ```
-* Hasil `screenshot` code `DO`-`WHILE` diatas dapat dilihat gambar berikut: 
-
-    ![hasil ss p6_c2](assets/img/pgame_p6_c2_19001.png)
-
-
-#### 3. Contoh Code `FOR`
-
-*   Tulis code berikut dan simpan dengan nama file `pgame_p6_c3_19001.java`, jika berhasil dijalankan silahkan ambil `screenshot`-nya dan simpan dengan nama file `pgame_p6_c3_19001.png`.
+```
 
 
 
-    ```java
-
-    // Contoh PRAKTIKUM p6_c2
-    // -----------------------------
-
-    // Anak2 Informatika UMMU Ternate
-    // Mata kuliah      : Pemrograman Game
-    // Praktikum        : Ke-6 / p6
-    // Nama File        : pgame_p6_c3_19001 (ganti dengan npm masing2)
-    // Nama Mahasiswa   : Ganti dengan Nama Anda 
-    // NPM              : 19001 (contoh saja)
-    // Tema             : Pengulangan - FOR
-    // *****************************************
-
-    // Nama Class / Nama file
-    class pgame_p6_c3_19001 {
-
-        public static void main(String args[])
-        {
-
-            System.out.println("*** PRAKTIKUM FOR *****");
-
-            // Cetak ke layar data.. to n.       
-            System.out.println("*** data  1 to 5 ************");
-            int j;
-            for(j=1; j<=5; j++){
-                System.out.println(" Cetak data ke -> " + j);
-            }
-
-            // Cetak ke layar data.. to n.       
-            System.out.println("*** data  5 to 1 ************");
-            int n;
-            for(n=5; n>0; n--){
-                System.out.println(" Cetak data ke -> " + n);
-            }
-
-        }
-    }
 
 
-    ```
-* Hasil `screenshot` code `FOR` diatas dapat dilihat gambar berikut: 
-
-    ![hasil ss p6_c3](assets/img/pgame_p6_c3_19001.png)
-
-
-
-### TUGAS PRAKTIKUM 6 : 
-
-1. PELAJARI dari Internet tentang `BREAK` dan `CONTINUE`  yang merupakan bagian dari `PERULANGAN` dan gunakan dalam code tugas anda !,
-2. Buat/Tulis sebuah code yang dapat menghasilkan tampilan seperti gambar `sreenshot` dibawah: 
-3. Gunakan `perulangan` dan `percabangan` untuk menyelesaikan tugas anda (harus ada keduanya !),
-4. Gambaran tugas yang harus diselesaikan: 
-    * terdapat data npm dari 19001 sampai 19200, 
-    * periksa data dari 19001 sampai 19200, jika data samadengan npm anda maka, 
-    * cetak ke layar data npm anda ke layar dengan pesan (seperti pada gambar),
-    * dan cetak pula dua data npm setelahnya berturut-turut ! (contoh lihat gambar).
-5. Simpan code TUGAS anda dengan nama file `pgame_p6_c4_19001.java`, jika berhasil dijalankan silahkan ambil `screenshot`-nya dan simpan dengan nama file `pgame_p6_c4_19001.png`.
-6. Setelah Selesai, silahkan kirim semua hasil `Praktikum 6` dan `Tugasnya` ke [Google Drive](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"}
-
-
-* Berikut merupakan Hasil `SCREENSHOT` code `TUGAS` diatas, Pertama dengan contoh NPM = 19001: 
-
-    ![hasil ss p6_c3](assets/img/pgame_p6_c4_1_19001.png)
-
-* Berikut merupakan Hasil `SCREENSHOT` code `TUGAS` diatas, Kedua dengan contoh NPM = 19009: 
-
-    ![hasil ss p6_c3](assets/img/pgame_p6_c4_2_19001.png)
 
 
 #### Referensi Pertemuan ke 6: 
 
 1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+2. [referensi 2 - petanikode.com](https://www.petanikode.com/java-percabangan/){:target="_blank"}
+3. [referensi 3 - kodedasar.com](https://kodedasar.com/blog/percabangan-java/){:target="_blank"}
 
 
 
