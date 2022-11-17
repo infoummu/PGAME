@@ -3,6 +3,262 @@ title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
 
+## PERTEMUAN DELAPAN 08 - METHOD/FUNGSI: 
+
+|Status  | : Offline                   |
+|Waktu   | : 10/11/2022               |
+|Tema    | : Praktikum PGame - JAVA - METODE/FUNGSI |
+
+
+### Metode atau Fungsi 
+1. Metode adalah blok kode yang hanya berjalan saat dipanggil.
+2. Anda dapat mengirimkan data, yang dikenal sebagai parameter, ke dalam metode.
+3. Metode digunakan untuk melakukan tindakan tertentu, dan juga dikenal sebagai fungsi.
+4. Mengapa menggunakan metode? Agar sebuah blok kode dapat DIGUNAKAN KEMBALI: MENDEFINISIKAN kode SEKALI, dan dapat digunakan berkali-kali.
+5. Berikut merupakan bentuk penuisan blok kode FUNGSI atau METODE: 
+    
+    CONTOH 1, FUNGSI Tanpa `PARAMETER`: 
+    ```java
+    // Nama Class / Nama file
+    class nama_clas {
+        
+        static void nama_fungsi_1() {
+            // Perintah dalam fungsi yang akan di-eksekusi
+            System.out.println(" Contoh Teks yang akan diprint ");
+        }
+
+        public static void main(String args[])
+        {
+            // panggil fungsinya
+            nama_fungsi_1();
+        }
+    }
+
+    ```
+
+### Parameter dan Argumen
+
+1. Informasi dapat diteruskan ke metode sebagai `PARAMETER`. Parameter bertindak sebagai variabel di dalam metode.
+2. Parameter ditentukan setelah nama metode, di dalam tanda kurung. Anda dapat menambahkan parameter sebanyak yang Anda inginkan, cukup pisahkan dengan koma.
+3. Contoh berikut merupakan metode yang menggunakan String bernama `nama_depan` sebagai parameter. Saat metode dipanggil, kita akan megisikan `nama_depan`, yang digunakan di dalam metode untuk mencetak nama secara lengkap:
+    
+    CONTOH 2, FUNGSI dengan PARAMETER berupa data type `String`: 
+    ```java
+    // Nama Class / Nama file
+    class nama_clas {
+        
+        static void nama_fungsi_2(String nama_depan) {
+            // Perintah dalam fungsi yang akan di-eksekusi
+            System.out.println(nama_depan + " Elyas");
+        }
+
+        public static void main(String args[])
+        {
+            // panggil fungsinya
+            nama_fungsi_2("Ikhwan ");
+        }
+    }
+
+    ```
+
+    CONTOH 3, FUNGSI dengan PARAMETER berupa data type `INT`: 
+    ```java
+    // Nama Class / Nama file
+    class nama_clas {
+        
+        static void nama_fungsi_3(int A) {
+            // Perintah dalam fungsi yang akan di-eksekusi
+            System.out.println(" Anggka yang di input adalah : " + A );
+        }
+
+        public static void main(String args[])
+        {
+            // panggil fungsinya
+            nama_fungsi_3(15);
+        }
+    }
+
+    ```
+
+    CONTOH 4, FUNGSI dengan MULTI PARAMETER dan MULTI type data: 
+    ```java
+    // Nama Class / Nama file
+    class nama_clas {
+        
+        static void nama_fungsi_4(String nama, int npm) {
+            // Perintah dalam fungsi yang akan di-eksekusi
+            System.out.println(" Nama Anda : " + nama );
+            System.out.println(" NPM  Anda : " + npm );
+        }
+
+        public static void main(String args[])
+        {
+            // panggil fungsinya
+            nama_fungsi_4("Ikhwan", 19001);
+        }
+    }
+
+    ```
+
+### FUNGSI yang Mengembalikan Nilai (Return Values)
+
+Kata kunci `void`, yang digunakan dalam beberapa contoh di atas, menunjukkan bahwa metode atau fungsi tersebut tidak boleh mengembalikan nilai. Jika Anda ingin metode mengembalikan nilai, Anda dapat menggunakan tipe data primitif (seperti int, char, dll.) bukan menggunakan kata kunci `void` tapi gunakan kata kunci tipe data dan `return` di dalam metode agar metode dapat mengembalikan nilai, berikut contohnya:
+
+CONTOH 5, FUNGSI yang DAPAT MENGEMBALIKAN NILAI: 
+
+```java
+
+// Nama Class / Nama file
+class nama_clas {
+    
+    static int nama_fungsi_5(int a, int b) {
+        // Perintah dalam fungsi yang akan di-eksekusi
+        return a+b;
+    }
+
+    public static void main(String args[])
+    {
+        // panggil fungsinya
+        System.out.println(" Hasil A + B : " + nama_fungsi_5(10, 15));
+    }
+}
+
+```
+
+
+### IMPLEMENTASI FUNGSI/METODE:
+
+1. Implementasikan code pada contoh-contoh diatas sebagai praktikum anda masing-masing, 
+2. Tulis kembali contoh code FUNGSI/METODE diatas menjadi `satu file saja`, 
+3. Simpan codenya dengan nama file: `pgame_p8_c1_19001.java`
+2. Kemudian Silahkan lakukan test untuk setiap penambahan code yang ditulis,
+3. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil hasil `screenshot`-nya dari hasil akhir setelah semua code di-eksekusi, dan kumpul/kirim setelah itu.
+4. Jika telah berhasil, silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"},
+5. Setelah PRAKTIKUM jika ada yang belum mengumpulkan hasil praktikumnya saat di LAB maka silahkan Kumpulkan hasil praktikumnya sesegera mungkin sebelum Praktikum `ke-9 (UTS - Tanggalnya nanti di INFOKAN)`.
+
+
+```java
+
+// Anak2 Informatika UMMU Ternate
+// Mata kuliah      : Pemrograman Game
+// Praktikum        : Ke-8 / p8
+// Nama File        : pgame_p8_c1_19001 (ganti dengan npm masing2)
+// Nama Mahasiswa   : Ganti dengan Nama Anda 
+// NPM              : 19001 (contoh saja)
+// Tema             : FUNGSI/METODE
+// *****************************************
+
+// Nama Class / Nama file
+class pgame_p8_c1_19001 {
+
+    // CONTOH FUNGSI 1
+    static void nama_fungsi_1() {
+        System.out.println(" Teks Ini Dari Fungsi_Ku !");
+    }
+
+    // CONTOH FUNGSI ?
+    // ...
+
+
+    // FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI
+    public static void main(String args[])
+    {
+        System.out.println("\n*** PRAKTIKUM Pertemuan 8 *****\n");
+
+        // panggil fungsi contoh 1
+        nama_fungsi_1();
+
+        // panggil fungsi contoh 2
+
+
+        // panggil fungsi contoh 3
+
+
+        // panggil fungsi contoh 4
+
+
+        // pgnggil fungsi contoh 5
+
+
+    }
+
+}
+
+```
+
+
+#### Referensi Pertemuan ke 8: 
+
+1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+2. [referensi 1 - www.w3schools.com/java](https://www.w3schools.com/java/java_methods.asp){:target="_blank"}
+
+
+***
+***
+***
+
+
+***
+***
+
+
+## PERTEMUAN TUJUH 07 - :
+
+|Status  | : Offline                   |
+|Waktu   | : 10/11/2022               |
+|Tema    | : Praktikum PGame - JAVA - ARRAY |
+
+
+```java 
+
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-7 / p7
+    // Nama File        : pgame_p7_c1_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : ARRAY
+    // *****************************************
+
+    // Nama Class / Nama file
+    class pgame_p7_c1_19001 {
+
+        public static void main(String args[])
+        {
+
+            System.out.println("*** PRAKTIKUM Pertemuan 7 *****");
+
+            int[] arr = {1, 2, 3, 4, 5};
+            String[] mhs = {"Budi", "Wawan", "Farida", "Iwan", "Wati"};
+
+
+            System.out.println(" Jumlah Array : " + arr.length);
+            for (int i=0; i < arr.length; i++) {
+
+                System.out.println(" Array Index ke : " + arr[i]);
+                System.out.println(" Mahasiswa ke : " + arr[i] + ", -> " + mhs[i]);
+            }
+
+        }
+    }
+
+
+```
+
+
+
+
+#### Referensi Pertemuan ke 7: 
+
+1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+
+
+
+***
+***
+***
+
+
 ## PERTEMUAN ENAM 06 - PENGULANGAN (LOOP):
 
 |Status  | : Online                   |
@@ -168,7 +424,7 @@ for (nilai_awal/inisialisasi; kondisi; tambah/kurang) {
 
     ```java
 
-    // Contoh PRAKTIKUM p6_c2
+    // Contoh PRAKTIKUM p6_c3
     // -----------------------------
 
     // Anak2 Informatika UMMU Ternate
