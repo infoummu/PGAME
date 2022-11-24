@@ -179,52 +179,70 @@
   <li>Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.</li>
 </ul>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    <span class="c1">// Anak2 Informatika UMMU Ternate</span>
-    <span class="c1">// Mata kuliah      : Pemrograman Game</span>
-    <span class="c1">// Praktikum        : Ke-9 / p9</span>
-    <span class="c1">// Nama File        : pgame_p9_c1_19001 (ganti dengan npm masing2)</span>
-    <span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
-    <span class="c1">// NPM              : 19001 (contoh saja)</span>
-    <span class="c1">// Tema             : Fungsi Scanner - Input dari User/Keyboard</span>
-    <span class="c1">// *****************************************</span>
+<h3 id="bahan-uts">Bahan UTS</h3>
+<ul>
+  <li>Input Nama, Jika bukan String maka Tapmpilkan Error Nama</li>
+  <li>Input NPM, Jika bukan Int yang diinput maka Tampilkan Error NPM</li>
+  <li>Jika Benar Keduanya, Maka Tampilkan Nama dan NPM</li>
+</ul>
 
-    <span class="c1">// Deklarasi Modul yang dipakai</span>
-    <span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Anak2 Informatika UMMU Ternate</span>
+<span class="c1">// Mata kuliah      : Pemrograman Game</span>
+<span class="c1">// Praktikum        : Ke-9 / p9</span>
+<span class="c1">// Nama File        : pgame_p9_c1_19001 (ganti dengan npm masing2)</span>
+<span class="c1">// Nama Mahasiswa   : Ganti dengan Nama Anda </span>
+<span class="c1">// NPM              : 19001 (contoh saja)</span>
+<span class="c1">// Tema             : Fungsi Scanner - Input dari User/Keyboard</span>
+<span class="c1">// *****************************************</span>
 
-    <span class="c1">// Nama Class / Nama file</span>
-    <span class="kd">class</span> <span class="nc">pgame_p9_c1_19001</span> <span class="o">{</span>
+<span class="c1">// Deklarasi Modul yang dipakai</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
 
+<span class="c1">// Nama Class / Nama file</span>
+<span class="kd">class</span> <span class="nc">pgame_p9_c1_19001</span> <span class="o">{</span>
 
-
-        <span class="c1">// CONTOH FUNGSI PRINT NAMA &amp; NPM</span>
-        <span class="kd">static</span> <span class="kt">void</span> <span class="nf">fungsi_cetak_nama</span><span class="o">(</span><span class="nc">String</span> <span class="n">nama</span><span class="o">,</span> <span class="kt">int</span> <span class="n">npm</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Nama Anda : "</span> <span class="o">+</span> <span class="n">nama</span> <span class="o">);</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" NPM  Anda : "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">);</span>
-        <span class="o">}</span>
-
-
-        <span class="c1">// FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI</span>
-        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
-        <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\n*** PRAKTIKUM Pertemuan 9 *****\n"</span><span class="o">);</span>
-
-            <span class="nc">Scanner</span> <span class="n">str_in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" Nama Anda : "</span><span class="o">);</span>
-            <span class="nc">String</span> <span class="n">nama</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
-
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" NPM  Anda : "</span><span class="o">);</span>
-            <span class="kt">int</span> <span class="n">npm</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>        
-
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*******************************"</span><span class="o">);</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Hasil Data Yang Anda Input : "</span><span class="o">);</span>
-
-            <span class="n">fungsi_cetak_nama</span><span class="o">(</span><span class="n">nama</span> <span class="o">,</span> <span class="n">npm</span><span class="o">);</span>
-
-        <span class="o">}</span>
-
+    <span class="c1">// CONTOH FUNGSI PRINT NAMA &amp; NPM</span>
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">fungsi_cetak_nama</span><span class="o">(</span><span class="nc">String</span> <span class="n">nama</span><span class="o">,</span> <span class="kt">int</span> <span class="n">npm</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Nama Anda : "</span> <span class="o">+</span> <span class="n">nama</span> <span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" NPM  Anda : "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">);</span>
     <span class="o">}</span>
+
+    <span class="c1">// FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span>
+    <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\n*** PRAKTIKUM Pertemuan 9 *****\n"</span><span class="o">);</span>
+
+        <span class="nc">Scanner</span> <span class="n">str_in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" Nama Anda : "</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">nama</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" NPM  Anda : "</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">npm</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>        
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*******************************"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Hasil Data Yang Anda Input : "</span><span class="o">);</span>
+
+        <span class="c1">// Mengambil Nama Tipe Data </span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Tipe Data Nama: "</span> <span class="o">+</span> <span class="n">nama</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">());</span>  
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Tipe Data NPM : "</span> <span class="o">+</span> <span class="o">((</span><span class="nc">Object</span><span class="o">)</span><span class="n">npm</span><span class="o">).</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">());</span> 
+        
+        <span class="c1">// Periksa Data Integer</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">npm</span> <span class="o">==</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">npm</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Data NPM "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">+</span> <span class="s">", Integer "</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Periksa Data String</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">nama</span> <span class="o">==</span> <span class="o">(</span><span class="nc">String</span><span class="o">)</span><span class="n">nama</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Data NPM "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">+</span> <span class="s">", String"</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="n">fungsi_cetak_nama</span><span class="o">(</span><span class="n">nama</span> <span class="o">,</span> <span class="n">npm</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
 
 </code></pre></div></div>
 
@@ -232,6 +250,7 @@
 
 <ol>
   <li><a href="https://infoummu.github.io/PGAME/Reff" target="_blank">referensi 1 - pgame/reff</a></li>
+  <li><a href="https://www.inf.unibz.it/~calvanese/teaching/05-06-ip/lecture-notes/uni02/node33.html" target="_blank">referensi 2 - www.inf.unibz.it</a></li>
 </ol>
 
 <hr />

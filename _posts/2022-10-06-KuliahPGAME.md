@@ -11,61 +11,76 @@ published: true
 
 * Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.
 
-```java
+### Bahan UTS
+* Input Nama, Jika bukan String maka Tapmpilkan Error Nama 
+* Input NPM, Jika bukan Int yang diinput maka Tampilkan Error NPM
+* Jika Benar Keduanya, Maka Tampilkan Nama dan NPM
 
-    // Anak2 Informatika UMMU Ternate
-    // Mata kuliah      : Pemrograman Game
-    // Praktikum        : Ke-9 / p9
-    // Nama File        : pgame_p9_c1_19001 (ganti dengan npm masing2)
-    // Nama Mahasiswa   : Ganti dengan Nama Anda 
-    // NPM              : 19001 (contoh saja)
-    // Tema             : Fungsi Scanner - Input dari User/Keyboard
-    // *****************************************
+```java  
+// Anak2 Informatika UMMU Ternate
+// Mata kuliah      : Pemrograman Game
+// Praktikum        : Ke-9 / p9
+// Nama File        : pgame_p9_c1_19001 (ganti dengan npm masing2)
+// Nama Mahasiswa   : Ganti dengan Nama Anda 
+// NPM              : 19001 (contoh saja)
+// Tema             : Fungsi Scanner - Input dari User/Keyboard
+// *****************************************
 
-    // Deklarasi Modul yang dipakai
-    import java.util.Scanner;
+// Deklarasi Modul yang dipakai
+import java.util.Scanner;
 
-    // Nama Class / Nama file
-    class pgame_p9_c1_19001 {
+// Nama Class / Nama file
+class pgame_p9_c1_19001 {
 
-
-
-        // CONTOH FUNGSI PRINT NAMA & NPM
-        static void fungsi_cetak_nama(String nama, int npm) {
-            System.out.println(" Nama Anda : " + nama );
-            System.out.println(" NPM  Anda : " + npm );
-        }
-
-
-        // FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI
-        public static void main(String args[])
-        {
-            System.out.println("\n*** PRAKTIKUM Pertemuan 9 *****\n");
-
-            Scanner str_in = new Scanner(System.in);
-
-            System.out.print(" Nama Anda : ");
-            String nama = str_in.nextLine();
-
-            System.out.print(" NPM  Anda : ");
-            int npm = str_in.nextInt();        
-
-            System.out.println("*******************************");
-            System.out.println(" Hasil Data Yang Anda Input : ");
-
-            fungsi_cetak_nama(nama , npm);
-
-        }
-
+    // CONTOH FUNGSI PRINT NAMA & NPM
+    static void fungsi_cetak_nama(String nama, int npm) {
+        System.out.println(" Nama Anda : " + nama );
+        System.out.println(" NPM  Anda : " + npm );
     }
 
-```
+    // FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI
+    public static void main(String args[])
+    {
+        System.out.println("\n*** PRAKTIKUM Pertemuan 9 *****\n");
 
+        Scanner str_in = new Scanner(System.in);
+
+        System.out.print(" Nama Anda : ");
+        String nama = str_in.nextLine();
+
+        System.out.print(" NPM  Anda : ");
+        int npm = str_in.nextInt();        
+
+        System.out.println("*******************************");
+        System.out.println(" Hasil Data Yang Anda Input : ");
+
+        // Mengambil Nama Tipe Data 
+        System.out.println(" Tipe Data Nama: " + nama.getClass().getName());  
+        System.out.println(" Tipe Data NPM : " + ((Object)npm).getClass().getName()); 
+        
+        // Periksa Data Integer
+        if (npm == (int)npm)
+        {
+            System.out.println(" Data NPM " + npm + ", Integer ");
+        }
+
+        // Periksa Data String
+        if (nama == (String)nama)
+        {
+            System.out.println(" Data NPM " + npm + ", String");
+        }
+
+        fungsi_cetak_nama(nama , npm);
+    }
+}
+
+
+```
 
 #### Referensi Pertemuan ke 9: 
 
 1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
-
+2. [referensi 2 - www.inf.unibz.it](https://www.inf.unibz.it/~calvanese/teaching/05-06-ip/lecture-notes/uni02/node33.html){:target="_blank"}
 
 
 ***
