@@ -3,6 +3,76 @@ title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
 
+## PERTEMUAN SEMBILAN 09 - User/Keyboard INPUT: 
+
+|Status  | : Offline                   |
+|Waktu   | : 24/11/2022               |
+|Tema    | : Praktikum PGame - JAVA - User/Keyboard INPUT |
+
+* Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.
+
+```java
+
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-9 / p9
+    // Nama File        : pgame_p9_c1_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Fungsi Scanner - Input dari User/Keyboard
+    // *****************************************
+
+    // Deklarasi Modul yang dipakai
+    import java.util.Scanner;
+
+    // Nama Class / Nama file
+    class pgame_p9_c1_19001 {
+
+
+
+        // CONTOH FUNGSI PRINT NAMA & NPM
+        static void fungsi_cetak_nama(String nama, int npm) {
+            System.out.println(" Nama Anda : " + nama );
+            System.out.println(" NPM  Anda : " + npm );
+        }
+
+
+        // FUNGSI UTAMA UNTUK MEMANGGIL METODE/FUNGSI
+        public static void main(String args[])
+        {
+            System.out.println("\n*** PRAKTIKUM Pertemuan 9 *****\n");
+
+            Scanner str_in = new Scanner(System.in);
+
+            System.out.print(" Nama Anda : ");
+            String nama = str_in.nextLine();
+
+            System.out.print(" NPM  Anda : ");
+            int npm = str_in.nextInt();        
+
+            System.out.println("*******************************");
+            System.out.println(" Hasil Data Yang Anda Input : ");
+
+            fungsi_cetak_nama(nama , npm);
+
+        }
+
+    }
+
+```
+
+
+#### Referensi Pertemuan ke 9: 
+
+1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+
+
+
+***
+***
+***
+
+
 ## PERTEMUAN DELAPAN 08 - METHOD/FUNGSI: 
 
 |Status  | : Offline                   |
