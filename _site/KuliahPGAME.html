@@ -175,15 +175,37 @@
   </tbody>
 </table>
 
-<ul>
-  <li>Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.</li>
-</ul>
-
 <h3 id="bahan-uts">Bahan UTS</h3>
 <ul>
-  <li>Input Nama, Jika bukan String maka Tapmpilkan Error Nama</li>
-  <li>Input NPM, Jika bukan Int yang diinput maka Tampilkan Error NPM</li>
-  <li>Jika Benar Keduanya, Maka Tampilkan Nama dan NPM</li>
+  <li>Silahkan Edit kode dibawah menjadi UTS Anda sesuai dengan arahan Berikut:</li>
+  <li>Terdapat Inputan data berupa <code class="language-plaintext highlighter-rouge">nama</code> dan <code class="language-plaintext highlighter-rouge">npm</code> keduanya bertipe data <code class="language-plaintext highlighter-rouge">String</code></li>
+  <li>Selanjutnya difilter, jika yang data <code class="language-plaintext highlighter-rouge">nama</code> yang di-input berupa Angka atau Number maka akan menampilkan Error !,</li>
+  <li>Dan Jika data <code class="language-plaintext highlighter-rouge">npm</code> yang di-input BUKAN Number atau Angka maka akan menampilkan Error !,</li>
+  <li>Dan Jika Benar Keduanya, Maka Tampilkan atau Mencetak data Nama dan NPM yang telah di-Input.</li>
+</ul>
+
+<h3 id="contoh-hasil-screenshot">Contoh Hasil Screenshot:</h3>
+<ol>
+  <li>
+    <p>Contoh <code class="language-plaintext highlighter-rouge">Screenshot</code> jaka Nama yang di-Input Salah
+<img src="assets/img/pgame_p9_uts_1.png" alt="Cotoh Hasil Error Nama" /></p>
+  </li>
+  <li>
+    <p>Contoh <code class="language-plaintext highlighter-rouge">Screenshot</code> jaka NPM yang di-Input Salah 
+<img src="assets/img/pgame_p9_uts_2.png" alt="Cotoh Hasil Error NPM" /></p>
+  </li>
+  <li>
+    <p>Contoh <code class="language-plaintext highlighter-rouge">Screenshot</code> jaka NAMA dan NPM Benar 
+<img src="assets/img/pgame_p9_uts_3.png" alt="Cotoh Hasil NPM dan Nama Benar" /></p>
+  </li>
+  <li>Simpan code UTS-nya dengan nama file: <b><code class="language-plaintext highlighter-rouge">pgame_p9_UTS_19001.java</code></b></li>
+  <li>Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil hasil <code class="language-plaintext highlighter-rouge">screenshot</code>-nya dan kumpul/kirim setelah itu.</li>
+  <li>Silahkan KUMPULKAN ke Google Drive pada LINK berikut ini <a href="https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing" target="_blank">GDRIVE</a>,</li>
+</ol>
+
+<h3 id="praktikum-ke-09">Praktikum ke 09:</h3>
+<ul>
+  <li>Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.</li>
 </ul>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Anak2 Informatika UMMU Ternate</span>
@@ -214,31 +236,15 @@
 
         <span class="nc">Scanner</span> <span class="n">str_in</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
 
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" Nama Anda : "</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" Input Nama Anda : "</span><span class="o">);</span>
         <span class="nc">String</span> <span class="n">nama</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
 
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" NPM  Anda : "</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">" Input NPM  Anda : "</span><span class="o">);</span>
         <span class="kt">int</span> <span class="n">npm</span> <span class="o">=</span> <span class="n">str_in</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>        
 
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*******************************"</span><span class="o">);</span>
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Hasil Data Yang Anda Input : "</span><span class="o">);</span>
-
-        <span class="c1">// Mengambil Nama Tipe Data </span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Tipe Data Nama: "</span> <span class="o">+</span> <span class="n">nama</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">());</span>  
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Tipe Data NPM : "</span> <span class="o">+</span> <span class="o">((</span><span class="nc">Object</span><span class="o">)</span><span class="n">npm</span><span class="o">).</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">());</span> 
         
-        <span class="c1">// Periksa Data Integer</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">npm</span> <span class="o">==</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">npm</span><span class="o">)</span>
-        <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Data NPM "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">+</span> <span class="s">", Integer "</span><span class="o">);</span>
-        <span class="o">}</span>
-
-        <span class="c1">// Periksa Data String</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">nama</span> <span class="o">==</span> <span class="o">(</span><span class="nc">String</span><span class="o">)</span><span class="n">nama</span><span class="o">)</span>
-        <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" Data NPM "</span> <span class="o">+</span> <span class="n">npm</span> <span class="o">+</span> <span class="s">", String"</span><span class="o">);</span>
-        <span class="o">}</span>
-
         <span class="n">fungsi_cetak_nama</span><span class="o">(</span><span class="n">nama</span> <span class="o">,</span> <span class="n">npm</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>

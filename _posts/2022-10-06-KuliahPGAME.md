@@ -9,12 +9,33 @@ published: true
 |Waktu   | : 24/11/2022               |
 |Tema    | : Praktikum PGame - JAVA - User/Keyboard INPUT |
 
-* Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.
 
 ### Bahan UTS
-* Input Nama, Jika bukan String maka Tapmpilkan Error Nama 
-* Input NPM, Jika bukan Int yang diinput maka Tampilkan Error NPM
-* Jika Benar Keduanya, Maka Tampilkan Nama dan NPM
+* Silahkan Edit kode dibawah menjadi UTS Anda sesuai dengan arahan Berikut: 
+* Terdapat Inputan data berupa `nama` dan `npm` keduanya bertipe data `String`
+* Selanjutnya difilter, jika yang data `nama` yang di-input berupa Angka atau Number maka akan menampilkan Error !, 
+* Dan Jika data `npm` yang di-input BUKAN Number atau Angka maka akan menampilkan Error !,
+* Dan Jika Benar Keduanya, Maka Tampilkan atau Mencetak data Nama dan NPM yang telah di-Input.
+
+### Contoh Hasil Screenshot: 
+1. Contoh `Screenshot` jaka Nama yang di-Input Salah
+![Cotoh Hasil Error Nama](assets/img/pgame_p9_uts_1.png)
+
+2. Contoh `Screenshot` jaka NPM yang di-Input Salah 
+![Cotoh Hasil Error NPM](assets/img/pgame_p9_uts_2.png)
+
+2. Contoh `Screenshot` jaka NAMA dan NPM Benar 
+![Cotoh Hasil NPM dan Nama Benar](assets/img/pgame_p9_uts_3.png)
+
+
+1. Simpan code UTS-nya dengan nama file: <b>`pgame_p9_UTS_19001.java`</b>
+2. Jika telah selesai menjalankan code-nya dan berhasil, silahkan ambil hasil `screenshot`-nya dan kumpul/kirim setelah itu.
+3. Silahkan KUMPULKAN ke Google Drive pada LINK berikut ini [GDRIVE](https://drive.google.com/drive/folders/1dgpT55wi7BA-h-BERfI5_bJ4JBc1bJ10?usp=sharing){:target="_blank"},
+
+
+### Praktikum ke 09: 
+* Kerjakan Praktikum dengan menulis Code berikut dibawah seperti Biasanya sebagaimana pada Praktikum-praktikum sebelumnya.
+
 
 ```java  
 // Anak2 Informatika UMMU Ternate
@@ -45,31 +66,15 @@ class pgame_p9_c1_19001 {
 
         Scanner str_in = new Scanner(System.in);
 
-        System.out.print(" Nama Anda : ");
+        System.out.print(" Input Nama Anda : ");
         String nama = str_in.nextLine();
 
-        System.out.print(" NPM  Anda : ");
+        System.out.print(" Input NPM  Anda : ");
         int npm = str_in.nextInt();        
 
         System.out.println("*******************************");
         System.out.println(" Hasil Data Yang Anda Input : ");
-
-        // Mengambil Nama Tipe Data 
-        System.out.println(" Tipe Data Nama: " + nama.getClass().getName());  
-        System.out.println(" Tipe Data NPM : " + ((Object)npm).getClass().getName()); 
         
-        // Periksa Data Integer
-        if (npm == (int)npm)
-        {
-            System.out.println(" Data NPM " + npm + ", Integer ");
-        }
-
-        // Periksa Data String
-        if (nama == (String)nama)
-        {
-            System.out.println(" Data NPM " + npm + ", String");
-        }
-
         fungsi_cetak_nama(nama , npm);
     }
 }
