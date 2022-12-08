@@ -12,7 +12,7 @@ published: true
 
 
 ### Modul Dasar Greenfoot 
-* Berikut merupakan modul dasar untuk memulai belajar greenfoot yang bisa dijadikan bahan dasar untuk memulai belajar greenfoot, Silahkan klik untuk [Download Modul Greenfoot disini](/assets/reff/Modul_Greenfoot.pdf){:target="_blank"}.
+* Berikut merupakan modul dasar untuk memulai belajar greenfoot yang bisa dijadikan bahan dasar untuk memulai belajar greenfoot, Silahkan klik untuk [Download Modul Greenfoot disini]({{ site.baseurl }}assets/reff/Modul_Greenfoot.pdf){:target="_blank"}.
 
 ### Daftar Yang Kumpul UTS
 
