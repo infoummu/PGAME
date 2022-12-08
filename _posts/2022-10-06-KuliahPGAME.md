@@ -3,6 +3,130 @@ title: Kuliah PEMROGRAMAN GAME
 published: true
 ---
 
+
+## PERTEMUAN SEPULUH 10 - Hasil UTS dan Pengenalan Greenfoot: 
+
+|Status  | : Offline                   |
+|Waktu   | : 08/12/2022               |
+|Tema    | : Praktikum PGame - JAVA - Pengenalan Greenfoot |
+
+
+### Modul Dasar Greenfoot 
+* Berikut merupakan modul dasar untuk memulai belajar greenfoot yang bisa dijadikan bahan dasar untuk memulai belajar greenfoot, Silahkan klik untuk [Download Modul Greenfoot disini](/assets/reff/Modul_Greenfoot.pdf){:target="_blank"}.
+
+### Daftar Yang Kumpul UTS
+
+* Berikut Merupakan daftar nama-nama yang sudah mengumpulkan UTS, data ini terakhir diupdate pada 08/12/2022 09:10 pagi
+
+    |NO | File UTS |
+    |---|----------|
+    |1  |  Muhammad Fadli Kharie (19139)/UTS/pgame_p9_UTS_19139.java |
+    | 2  |  Nurmala La Munja (19091)/Pertemuan_9_UTS/pgame_p9_UTS_19091.java |
+    | 3  |  Laela Aryana (19087)/PGAME P9／UTS/pgame_p9_UTS_19087.java |
+    | 4  |  Muhammad Iqram Latulumamina (19137)/pemrograman game UTS/pgame_p9_UTS_19137.java |
+    | 5  |  Anti Fokaaya (19099)/Pertemuan 9 UTS/pgame_p9_UTS_19099.java |
+    | 6  |  Andika Pratama Ode (19132)/UTS/pgame_p9_UTS_19132.java |
+    | 7  |  Akbar Benteng (19084)/UTS Pgame/pgame_p9_UTS_19084.java |
+    | 8  |  Siti Fatima Tapain (19063)/pgame_p9_UTS_19063.java |
+    | 9  |  La Deli La Ayana (19079)/UTS PGAME/Tugas_uts_19079.java |
+    |10  |  Zulaeha (19081)/pgame_p9_UTS_19081.java |
+    |11  |  Nadia I Agil (19062)/pgame_p9_UTS_19062.java |
+    |12  |  YUSUP HI BISNU (19109)/UTS/pgame_p9_UTS_19109.java |
+    |13  |  Iramaya Umagapi (19114)/UTS/pgame_p9_UTS_19114.java |
+    |14  |  Cahya Andrianti (19076)/PGAME9/pgame_p9_UTS_19109.java |
+    |15  |  Muhammad Aditya Rabbani Putra Harianto (19035)/Uts/pgame_p9_UTS_19035.java |
+    |16  |  Muhammad Fadli Kharie (19139)/UTS/pgame_p9_UTS_19139.class |
+
+### Jawaban UTS : 
+
+* Berikut Merupakan `CODE Jawaban` dari UTS anda : 
+
+    ```java
+    // Anak2 Informatika UMMU Ternate
+    // Mata kuliah      : Pemrograman Game
+    // Praktikum        : Ke-9 / p9
+    // Nama File        : pgame_p9_UTS_19001 (ganti dengan npm masing2)
+    // Nama Mahasiswa   : Ganti dengan Nama Anda 
+    // NPM              : 19001 (contoh saja)
+    // Tema             : Fungsi Scanner - Input dari User/Keyboard
+    // *****************************************
+
+    // Deklarasi Modul yang dipakai
+    import java.util.Scanner;
+
+    // Nama Class / Nama file
+    class pgame_p9_UTS_19001 {
+
+        // FUNGSI PRINT NAMA & NPM
+        static void fungsi_cetak_nama(String nama, String npm) {
+            System.out.println(" Nama Anda : " + nama );
+            System.out.println(" NPM  Anda : " + npm );
+        }
+
+        // FUNGSI UTAMA 
+        public static void main(String args[])
+        {
+            boolean X=true;
+            while ( X ){
+                try {
+                    // System.out.println("X == " + X);
+                    System.out.println("\n***** UTS PGAME*****\n");
+
+                    Scanner keyb = new Scanner(System.in);
+
+                    System.out.print(" Input Nama Anda : ");
+                    String nama = keyb.nextLine();
+                    
+                    if ((nama.length() == 1) && (nama.contains("q"))){
+                        System.out.println(" Exit.. by..by..:).. \n");
+                        break;
+                    }
+    
+                    System.out.print(" Input NPM  Anda : ");
+                    String npm = keyb.nextLine();        
+
+                    System.out.println("*******************************");
+
+                    String PESAN=""; 
+
+                    if (!nama.matches("[a-zA-Z_]+")) {
+                        PESAN=  " Input Salah !\n Nama Masih Error, Silahkan Perbaiki !";
+                    }
+                    
+                    if (!npm.matches("[0-9]+")) {
+                        PESAN=  " Input Salah !\n NPM Masih Error, Silahkan Perbaiki !";
+                    }
+
+                    if ( PESAN.length() > 1)
+                    {
+                        System.out.println(PESAN);System.out.println(PESAN);
+                    }
+        
+                    if ((npm.matches("[0-9]+")) && (nama.matches("[a-zA-Z_]+")))
+                    { 
+                        System.out.println("\n Inputan Sudah BENAR,\n Data Yang Anda Input : ");
+                        fungsi_cetak_nama(nama , npm);
+                    }
+                }
+                catch (Exception E){
+                    System.out.println("Ada Yang ERROR : \n"+ E );
+                }
+            }
+        }
+    }
+    ```
+
+#### Referensi Pertemuan ke 9: 
+
+1. [referensi 1 - pgame/reff](https://infoummu.github.io/PGAME/Reff){:target="_blank"}
+2. [referensi 2 - ](){:target="_blank"}
+
+
+***
+***
+***
+
+
 ## PERTEMUAN SEMBILAN 09 - User/Keyboard INPUT: 
 
 |Status  | : Offline                   |
