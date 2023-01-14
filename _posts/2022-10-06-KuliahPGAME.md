@@ -1,5 +1,7 @@
 ---
 title: Kuliah PEMROGRAMAN GAME
+author: Ikhwan N. Elyas - 19000
+category: Halaman Materi
 published: true
 ---
 
@@ -1648,4 +1650,4 @@ Nama-nama yang hadir pada pertemuan pertama,
 
 
 ***
-By : Ikhwan
+By : Ikhwan@fedora37.linux
